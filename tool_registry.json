@@ -1,0 +1,43 @@
+{
+    "send_email": {
+      "module": "email_tools",
+      "function": "send_email",
+      "args_schema": {
+        "to": "str",
+        "subject": "str",
+        "body": "str"
+      }
+    },
+    "start_youtube_channel": {
+      "module": "youtube_tools",
+      "function": "start_youtube_channel",
+      "args_schema": {
+        "channel_name": "str",
+        "description": "str"
+      }
+    },
+    "extract_keywords": {
+      "module": "extract_keywords_tools",
+      "function": "extract_keywords",
+      "args_schema": {
+        "text": "str"
+      }
+    },
+    "summarize_document": {
+      "module": "summarize_document_tools",
+      "function": "summarize_document",
+      "args_schema": {
+        "file_path": "str",
+        "summary_length": "str"
+      }
+    },
+    "translate_text": {
+      "module": "translate_text_tools",
+      "function": "translate_text",
+      "args_schema": {
+        "text": "str",
+        "target_language": "str"
+      }
+    }
+  }
+  

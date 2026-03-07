@@ -1,0 +1,16 @@
+User Input: use the camera to take a photo
+Recent Memory:
+USER: use the camera to take a photo
+
+Expected Output:
+Alice: tool: camera, action: take photo
+Planner: log: Photo taken by Alice
+
+---
+User Input: scan the area with lidar
+Recent Memory:
+USER: scan the area with lidar
+
+Expected Output:
+Alice: tool: lidar, action: scan area
+Planner: log: Area scanned with lidar 

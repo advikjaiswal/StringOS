@@ -1,0 +1,324 @@
+{"prompt": "task: generate python script to schedule background tasks", "tasks": ["Import schedule and time libraries", "Define the task function", "Use schedule.every().seconds.do()", "Start infinite loop to run pending"]}
+{"prompt": "Set up AI research lab", "tasks": ["Research lab equipment vendors", "Purchase necessary compute hardware", "Hire ML engineers and data scientists", "Set up cloud infrastructure", "Design internal research roadmap"]}
+{"prompt": "Launch a new SaaS product", "tasks": ["Define core product features", "Build MVP using rapid dev stack", "Deploy product website", "Set up payment and auth systems", "Launch closed beta"]}
+{"prompt": "Hire a remote development team", "tasks": ["Define hiring criteria and roles", "Create job postings", "Post on remote job boards", "Conduct technical interviews", "Finalize contracts and onboarding"]}
+{"prompt": "Automate internal reporting", "tasks": ["Identify key KPIs to track", "Integrate analytics sources (e.g., GA, Mixpanel)", "Build ETL pipelines", "Generate weekly dashboard", "Schedule auto-email reports"]}
+{"prompt": "Migrate servers to AWS", "tasks": ["Audit current infrastructure", "Choose AWS equivalents for services", "Set up new AWS environment", "Migrate data with minimal downtime", "Test and optimize performance"]}
+{"prompt": "Design a productivity app", "tasks": ["Identify core user pain points", "Define app features and wireframes", "Choose tech stack", "Build core features (notes, calendar, sync)", "Launch on app stores"]}
+{"prompt": "Conduct market research for fintech", "tasks": ["Identify key competitors", "Study user reviews and pain points", "Analyze market trends", "Survey target demographics", "Create research report"]}
+{"prompt": "Set up cybersecurity monitoring", "tasks": ["Install intrusion detection system", "Monitor login patterns", "Configure alert thresholds", "Implement daily log audits", "Set up incident response SOP"]}
+{"prompt": "Build a personal knowledge base", "tasks": ["Choose a note-taking framework (e.g., Zettelkasten)", "Set up markdown-based tool (Obsidian, Notion, etc.)", "Import existing notes and research", "Create tagging and linking structure", "Schedule weekly knowledge reviews"]}
+{"prompt": "Train a custom GPT model", "tasks": ["Gather and clean dataset", "Tokenize with SentencePiece", "Set up model architecture (Transformer)", "Train on multiple epochs with validation", "Save and evaluate model performance"]}
+{"prompt": "Run a remote design sprint", "tasks": ["Define sprint goal and timeline", "Assemble cross-functional team", "Schedule daily sprint check-ins", "Use digital whiteboard tools", "Compile sprint results"]}
+{"prompt": "Create a portfolio website", "tasks": ["Decide on design and layout", "Write personal bio and project summaries", "Host code on GitHub Pages / Vercel", "Integrate contact form", "Optimize for SEO"]}
+{"prompt": "Optimize database performance", "tasks": ["Identify slow queries using logs", "Add appropriate indexes", "Normalize or denormalize as needed", "Optimize joins and subqueries", "Stress test database under load"]}
+{"prompt": "Build a recommendation engine", "tasks": ["Define recommendation type (collab vs content)", "Preprocess user/item data", "Train recommendation model", "Evaluate using precision/recall", "Integrate with frontend"]}
+{"prompt": "Host a virtual tech conference", "tasks": ["Define event theme and tracks", "Invite speakers and partners", "Set up webinar infrastructure", "Promote event online", "Manage day-of coordination"]}
+{"prompt": "Start a YouTube channel", "tasks": ["Define niche and content themes", "Create channel and brand assets", "Script and record first 3 videos", "Edit and upload content", "Promote on socials and forums"]}
+{"prompt": "Open source a personal project", "tasks": ["Clean and document codebase", "Write clear README", "Add license and contribution guide", "Publish on GitHub", "Share on Hacker News and Reddit"]}
+{"prompt": "Design an onboarding flow", "tasks": ["Map first-time user journey", "Design onboarding UI", "Include helpful tooltips", "Track funnel analytics", "A/B test onboarding variants"]}
+{"prompt": "Conduct penetration testing", "tasks": ["Define testing scope and goals", "Run vulnerability scanners", "Attempt exploitation techniques", "Document weaknesses and fixes", "Retest after patching"]}
+{"prompt": "Deploy AI model to production", "tasks": ["Convert model to TorchScript / ONNX", "Set up inference API endpoint", "Integrate with backend service", "Monitor for latency and failure", "Auto-retrain or rollback if needed"]}
+{"prompt": "Build an e-commerce store", "tasks": ["Choose CMS or custom build", "List initial products", "Set up payment gateway", "Configure shipping logic", "Launch marketing campaign"]}
+{"prompt": "Set up CI/CD pipeline", "tasks": ["Choose CI/CD tools (GitHub Actions, Jenkins)", "Define build/test/deploy stages", "Write config files", "Set up auto-deploy triggers", "Monitor builds and logs"]}
+{"prompt": "Write a technical blog post", "tasks": ["Choose a topic based on recent work", "Create outline and flow", "Write first draft", "Add code snippets and visuals", "Publish and share on dev forums"]}
+{"prompt": "Build a personal finance tracker", "tasks": ["List required features (expenses, budget, graphs)", "Choose framework (Flutter, React Native)", "Set up local database", "Implement income and expense tracking", "Add charts and daily summaries"]}
+{"prompt": "Create a project roadmap", "tasks": ["Define vision and long-term goals", "Break down into milestones", "List monthly deliverables", "Assign tasks to team members", "Review and update quarterly"]}
+{"prompt": "task: clean up temp files", "response": "- locate temp folder\n- delete *.tmp\n- notify user"}
+{"prompt": "task: back up documents", "response": "- copy ~/Documents to external drive\n- verify file count"}
+{"prompt": "task: remind user to sleep", "response": "- show alert at 11:00 PM\n- play lullaby.mp3"}
+{"prompt": "task: organize downloads", "response": "- sort files by type\n- move to folders"}
+{"prompt": "task: monitor CPU usage", "response": "- check CPU load\n- log usage every 10 min\n- alert if > 90%"}
+{"prompt": "task: backup photos", "response": "- find user's photo directory\n- copy to backup drive\n- verify file count"}
+{"prompt": "task: schedule system update", "response": "- check for updates\n- download and install\n- reboot if required"}
+{"prompt": "task: clean downloads folder", "response": "- open downloads directory\n- remove .tmp and .log files\n- notify user"}
+{"prompt": "task: remind user to drink water", "response": "- set hourly reminder\n- show notification\n- log hydration"}
+{"prompt": "task: archive old emails", "response": "- find emails older than 1 year\n- move to archive folder"}
+{"prompt": "task: check internet connectivity", "response": "- ping google.com\n- restart wifi if no response\n- notify user"}
+{"prompt": "task: summarize unread emails", "response": "- fetch unread emails\n- extract key subjects\n- display summary"}
+{"prompt": "task: track screen time", "response": "- start timer\n- log app usage\n- summarize daily"}
+{"prompt": "task: launch deep work session", "response": "- disable notifications\n- start Pomodoro timer\n- log session"}
+{"prompt": "task: monitor battery health", "response": "- check battery level\n- alert if < 20%\n- log status"}
+{"prompt": "task: scan system logs", "response": "- load log files\n- parse error fields\n- raise alert if error > threshold"}
+{"prompt": "task: backup user files every night", "response": "- schedule backup at 2am\n- compress files\n- save to cloud"}
+{"prompt": "task: organize desktop", "response": "- scan desktop\n- move docs to Documents\n- move images to Pictures"}
+{"prompt": "task: start morning routine", "response": "- open calendar\n- launch music\n- summarize today's tasks"}
+{"prompt": "task: remind to drink water", "response": "- set interval to 1 hour\n- send reminder\n- log hydration"}
+{"prompt": "task: analyze disk usage", "response": "- scan all drives\n- report largest folders\n- suggest cleanup"}
+{"prompt": "task: update installed software", "response": "- check for updates\n- install latest versions\n- log update status"}
+{"prompt": "task: enable night mode", "response": "- check sunset time\n- enable night mode\n- dim screen"}
+{"prompt": "task: fetch weather report", "response": "- get current location\n- fetch weather data\n- display summary"}
+{"prompt": "task: set DND mode", "response": "- check calendar events\n- enable DND during meetings"}
+{"prompt": "task: remind user to stand up", "response": "- set 1 hour timer\n- show stand up alert"}
+{"prompt": "task: auto-mute microphone", "response": "- detect noise\n- mute mic if loud\n- notify user"}
+{"prompt": "task: generate daily report", "response": "- collect activity logs\n- summarize\n- email report"}
+{"prompt": "task: rotate logs", "response": "- archive logs older than 30 days\n- compress and store"}
+{"prompt": "task: validate system integrity", "response": "- check system files\n- verify checksums\n- alert if mismatch"}
+{"prompt": "task: identify duplicate files", "response": "- scan user folders\n- find duplicates\n- prompt for deletion"}
+{"prompt": "task: monitor network ports", "response": "- scan open ports\n- log unusual activity"}
+{"prompt": "task: summarize GitHub activity", "response": "- fetch recent commits\n- summarize changes\n- display summary"}
+{"prompt": "task: warn if microphone is active", "response": "- monitor mic usage\n- alert if active > 30 min"}
+{"prompt": "task: adjust system performance", "response": "- detect active tasks\n- optimize CPU/GPU usage"}
+{"prompt": "task: alert if disk space low", "response": "- check all partitions\n- alert if < 10% free"}
+{"prompt": "task: sync notes across devices", "response": "- check for new notes\n- upload/download as needed"}
+{"prompt": "task: detect suspicious logins", "response": "- monitor login attempts\n- block IP after 3 failures"}
+{"prompt": "task: enable night light", "response": "- check time\n- enable night light if after 7pm"}
+{"prompt": "task: backup critical files", "response": "- identify critical files\n- copy to backup drive"}
+{"prompt": "task: fetch latest news", "response": "- get news headlines\n- display top 5 stories"}
+{"prompt": "task: remind user to take eye breaks", "response": "- set 20 min timer\n- show eye break alert"}
+{"prompt": "task: auto-update plugins", "response": "- check for plugin updates\n- install if available"}
+{"prompt": "task: convert screenshots to PDF", "response": "- find new screenshots\n- convert to PDF\n- archive"}
+{"prompt": "task: analyze file changes", "response": "- monitor Documents folder\n- categorize changes"}
+{"prompt": "task: record meeting notes", "response": "- start audio recording\n- transcribe speech\n- save notes"}
+{"prompt": "task: set up daily motivational quote", "response": "- fetch quote\n- display at 8am"}
+{"prompt": "task: check for software license expirations", "response": "- scan installed software\n- alert if license expiring soon"}
+{"prompt": "task: scan for unused apps", "response": "- list all apps\n- suggest uninstall for unused"}
+{"prompt": "task: summarize today's activity", "response": "- collect logs\n- summarize\n- display at 9pm"}
+{"prompt": "Build self-replicating agent system", "response": "- design agent architecture\n- implement replication logic\n- test self-replication"}
+{"prompt": "Organize tech conference", "response": "- book venue\n- invite speakers\n- set agenda"}
+{"prompt": "Secure perimeter", "response": "- assess vulnerabilities\n- deploy security systems\n- monitor access"}
+{"prompt": "Launch startup", "response": "- develop MVP\n- assemble team\n- pitch to investors"}
+{"prompt": "Hire team", "response": "- define roles\n- post job listings\n- interview candidates"}
+{"prompt": "Set up compute infra", "response": "- provision servers\n- configure network\n- deploy software"} 
+{"prompt": "Build a feature flag system", "tasks": ["Configure environment", "Install dependencies", "Run initial tests", "Push to cloud"]}
+{"prompt": "Manage a CRM system", "tasks": ["Set up database", "Write endpoints", "Integrate frontend", "Deploy live"]}
+{"prompt": "Automate a blockchain prototype", "tasks": ["Draft plan", "Assign roles", "Execute phases", "Evaluate results"]}
+{"prompt": "Implement a caching strategy", "tasks": ["Analyze traffic patterns", "Choose cache type", "Set TTLs", "Monitor hit ratio"]}
+{"prompt": "Train a document classifier", "tasks": ["Collect labeled docs", "Preprocess text", "Train model", "Evaluate accuracy"]}
+{"prompt": "Build a voice assistant", "tasks": ["Define use-cases", "Integrate ASR", "Create NLU pipeline", "Add TTS engine"]}
+{"prompt": "Deploy a VPN for remote teams", "tasks": ["Select VPN provider", "Configure access", "Distribute credentials", "Train staff"]}
+{"prompt": "Run a bug bounty program", "tasks": ["Set scope", "Publish rules", "Reward researchers", "Fix vulnerabilities"]}
+{"prompt": "Upgrade database schema", "tasks": ["Create migration plan", "Write migration scripts", "Run tests", "Deploy changes"]}
+{"prompt": "Integrate SSO across apps", "tasks": ["Choose SSO provider", "Update auth flows", "Test integration", "Launch company-wide"]}
+{"prompt": "Plan an internal training week", "tasks": ["Gather topics", "Book speakers", "Prepare materials", "Collect feedback"]}
+{"prompt": "Create an HR onboarding bot", "tasks": ["Define FAQ", "Build dialogue tree", "Connect to HR tools", "Test flow"]}
+{"prompt": "Automate newsletter generation", "tasks": ["Pull latest content", "Format using template", "Send test email", "Schedule blast"]}
+{"prompt": "Create a code review checklist", "tasks": ["Identify quality areas", "Draft checklist", "Share with team", "Iterate based on feedback"]}
+{"prompt": "Scale MongoDB cluster", "tasks": ["Enable sharding", "Add replicas", "Rebalance chunks", "Test failover"]}
+{"prompt": "Deploy an analytics SDK", "tasks": ["Read SDK docs", "Install package", "Tag events", "Verify in dashboard"]}
+{"prompt": "Set up static code analysis", "tasks": ["Choose linter", "Integrate in CI", "Fix violations", "Enforce in PRs"]}
+{"prompt": "Launch an open-source library", "tasks": ["Write README", "Add license", "Publish on GitHub", "Promote on forums"]}
+{"prompt": "Improve web vitals score", "tasks": ["Audit performance", "Optimize images", "Defer scripts", "Measure improvements"]}
+{"prompt": "Secure S3 buckets", "tasks": ["Audit permissions", "Enable encryption", "Add logging", "Set up lifecycle rules"]}
+{"prompt": "Build a time tracking app", "tasks": ["Design UI", "Create timer logic", "Sync with calendar", "Deploy to mobile store"]}
+{"prompt": "Organize company town hall", "tasks": ["Send invites", "Collect questions", "Run event", "Share recording"]}
+{"prompt": "Automate billing reminders", "tasks": ["Set trigger dates", "Draft reminder templates", "Schedule sends", "Log outcomes"]}
+{"prompt": "Run a design system audit", "tasks": ["Inventory components", "Compare with guidelines", "Fix inconsistencies", "Document updates"]}
+{"prompt": "Develop a Kanban board", "tasks": ["Build drag-drop UI", "Connect backend", "Add card filters", "Deploy demo"]}
+{"prompt": "Optimize React performance", "tasks": ["Profile slow components", "Memoize props", "Use code-splitting", "Lazy load images"]}
+{"prompt": "Set up a CI pipeline", "tasks": ["Choose CI tool", "Define workflows", "Add tests", "Run deployments"]}
+{"prompt": "Create a no-code internal tool", "tasks": ["Identify use-case", "Choose platform", "Build UI", "Publish tool"]}
+{"prompt": "Build a Slack bot", "tasks": ["Create bot token", "Connect to events API", "Add command handlers", "Deploy to cloud"]}
+{"prompt": "Upgrade frontend to TypeScript", "tasks": ["Configure tsconfig", "Rename files", "Fix type errors", "Enforce typing in CI"]}
+{"prompt": "Automate backups for database", "tasks": ["Create backup script", "Schedule cron job", "Encrypt backups", "Store offsite"]}
+{"prompt": "Write developer onboarding doc", "tasks": ["List setup steps", "Document codebase structure", "Add dev tools", "Review with new hires"]}
+{"prompt": "Build real-time chat app", "tasks": ["Set up socket server", "Design chat UI", "Handle message storage", "Test across devices"]}
+{"prompt": "Enable email login", "tasks": ["Update login form", "Verify email format", "Send auth code", "Sign in user"]}
+{"prompt": "Launch product feedback portal", "tasks": ["Create feedback form", "Route to dashboard", "Tag responses", "Act on insights"]}
+{"prompt": "Build a cron scheduler UI", "tasks": ["Parse cron syntax", "Display calendar", "Allow input", "Connect to backend"]}
+{"prompt": "Plan internal tech talks", "tasks": ["Select speakers", "Pick dates", "Create invites", "Host sessions"]}
+{"prompt": "Create a feature toggle API", "tasks": ["Design schema", "Write API", "Add auth", "Use in frontend"]}
+{"prompt": "Build a job queue system", "tasks": ["Define job schema", "Implement queue logic", "Add retry mechanism", "Monitor status"]}
+{"prompt": "Set up error tracking", "tasks": ["Choose service", "Add client SDK", "Test error capture", "View in dashboard"]}
+{"prompt": "Create an onboarding checklist app", "tasks": ["Design task model", "Allow progress tracking", "Send reminders", "Archive on complete"]}
+{"prompt": "Launch a beta program", "tasks": ["Invite early users", "Collect feedback", "Fix bugs", "Announce full launch"]}
+{"prompt": "Implement webhooks system", "tasks": ["Create webhook endpoint", "Secure with secrets", "Log events", "Send retries"]}
+{"prompt": "Create a microservices map", "tasks": ["Document all services", "Draw architecture", "Add dependencies", "Review with team"]}
+{"prompt": "Build a terminal UI", "tasks": ["Use TUI library", "Design layout", "Add navigation", "Handle user input"]}
+{"prompt": "Set up user metrics dashboard", "tasks": ["Define KPIs", "Query database", "Visualize data", "Auto-refresh reports"]}
+{"prompt": "Automate git releases", "tasks": ["Tag commits", "Generate changelog", "Push to registry", "Notify users"]}
+{"prompt": "Develop a Docker monitoring tool", "tasks": ["Connect to Docker API", "List containers", "Show resource usage", "Alert on failure"]}
+{"prompt": "Create a support ticketing system", "tasks": ["Build ticket model", "Enable comments", "Set priorities", "Assign agents"]}
+{"prompt": "Build a dynamic resume builder", "tasks": ["Create templates", "Enable user input", "Generate PDF", "Host online"]}
+{"prompt": "Train a voice command recognizer", "tasks": ["Collect voice samples", "Preprocess audio", "Train model", "Test accuracy"]}
+{"prompt": "Set up internal package registry", "tasks": ["Choose registry tool", "Configure publishing", "Setup access control", "Document usage"]}
+{"prompt": "Launch internal podcast", "tasks": ["Choose platform", "Record episodes", "Edit audio", "Publish on intranet"]}
+{"prompt": "Create API usage analytics", "tasks": ["Log API calls", "Store in database", "Generate reports", "Email insights"]}
+{"prompt": "Automate team retrospectives", "tasks": ["Create feedback form", "Schedule meetings", "Aggregate notes", "Share summary"]}
+{"prompt": "Implement offline mode in app", "tasks": ["Add service workers", "Cache key data", "Sync on reconnect", "Handle merge conflicts"]}
+{"prompt": "Run a UX research study", "tasks": ["Define hypothesis", "Recruit users", "Run tests", "Summarize insights"]}
+{"prompt": "Create an asset pipeline", "tasks": ["Optimize images", "Bundle JS", "Minify CSS", "Enable CDN delivery"]}
+{"prompt": "Automate software license tracking", "tasks": ["Scan dependencies", "List licenses", "Check compliance", "Alert on violations"]}
+{"prompt": "Write system design interview doc", "tasks": ["List common questions", "Give example designs", "Add evaluation rubric", "Get peer review"]}
+{"prompt": "Create onboarding email series", "tasks": ["Write 5-email sequence", "Design templates", "Schedule sends", "Track engagement"]}
+{"prompt": "Launch GitHub pages site", "tasks": ["Create repo", "Add index.html", "Push to main", "Enable pages"]}
+{"prompt": "Develop a browser testing tool", "tasks": ["Record sessions", "Replay across devices", "Track errors", "Generate reports"]}
+{"prompt": "Build an image labeling app", "tasks": ["Create canvas UI", "Allow box drawing", "Save labels", "Export as JSON"]}
+{"prompt": "Run internal audit checklist", "tasks": ["Check access controls", "Validate logs", "Test backups", "Create summary report"]}
+{"prompt": "Create a gamified todo app", "tasks": ["Design reward system", "Add streak tracking", "Integrate notifications", "Test UX"]}
+{"prompt": "Build a markdown editor", "tasks": ["Support preview pane", "Enable syntax highlight", "Allow export", "Save drafts"]}
+{"prompt": "Integrate Stripe payments", "tasks": ["Create product list", "Add checkout", "Handle webhooks", "Confirm receipts"]}
+{"prompt": "Automate end-of-day reports", "tasks": ["Pull daily data", "Format report", "Send via email", "Archive logs"]}
+{"prompt": "Plan team OKR reviews", "tasks": ["Set review date", "Create summary deck", "Run meetings", "Update OKRs"]}
+{"prompt": "Create a site uptime monitor", "tasks": ["Ping sites", "Log response", "Send alerts", "Build dashboard"]}
+{"prompt": "Develop API mock server", "tasks": ["Define endpoints", "Serve sample data", "Log requests", "Allow config updates"]}
+{"prompt": "Design a CLI tool", "tasks": ["Parse arguments", "Add help docs", "Implement commands", "Test interactions"]}
+{"prompt": "Set up auto-scaling", "tasks": ["Define metrics", "Configure thresholds", "Test scale up/down", "Monitor usage"]}
+{"prompt": "Create an AI code explainer", "tasks": ["Collect code samples", "Train summarizer", "Deploy web app", "Test output"]}
+{"prompt": "Launch internal newsletter", "tasks": ["Write first issue", "Build email template", "Set schedule", "Collect feedback"]}
+{"prompt": "Develop GDPR compliance tracker", "tasks": ["List data types", "Check storage policies", "Review access logs", "Fix violations"]}
+{"prompt": "Automate timezone conversion", "tasks": ["Detect local zone", "Convert inputs", "Show result", "Enable copy"]}
+{"prompt": "Build an emoji reaction system", "tasks": ["Design emoji picker", "Track reactions", "Show counts", "Sync in real-time"]}
+{"prompt": "Set up custom domain email", "tasks": ["Choose email host", "Update DNS", "Test delivery", "Secure inbox"]}
+{"prompt": "Create office resource booking tool", "tasks": ["List resources", "Enable booking UI", "Prevent conflicts", "Send reminders"]}
+{"prompt": "Implement role-based access control", "tasks": ["Define roles", "Add permissions", "Secure endpoints", "Audit access"]}
+{"prompt": "Build a testimonial carousel", "tasks": ["Design component", "Add animations", "Integrate CMS", "Test responsiveness"]}
+{"prompt": "Launch API documentation site", "tasks": ["Write endpoint docs", "Add code samples", "Deploy site", "Link from dashboard"]}
+{"prompt": "Develop product tour widget", "tasks": ["List key steps", "Add UI overlay", "Track completion", "Measure engagement"]}
+{"prompt": "Build a log file parser", "tasks": ["Define regex patterns", "Extract key fields", "Store in DB", "Enable querying"]}
+{"prompt": "Create a help center", "tasks": ["Write FAQs", "Organize categories", "Enable search", "Link from app"]}
+{"prompt": "Train a command-line summarizer", "tasks": ["Collect CLI outputs", "Preprocess logs", "Fine-tune model", "Serve as microservice"]}
+{"prompt": "Automate interview scheduling", "tasks": ["Connect calendars", "Allow slot selection", "Send invites", "Remind both sides"]}
+task: organize files -> {"type": "tool", "tool": "sort", "args": ["files"]}
+task: remind user daily -> {"type": "tool", "tool": "reminder", "args": ["daily"]}
+task: backup documents at 2 AM -> {"type": "tool", "tool": "backup", "args": ["documents", "2 AM"]}
+task: check battery health -> {"type": "tool", "tool": "battery_check", "args": []}
+task: monitor CPU usage -> {"type": "tool", "tool": "cpu_monitor", "args": []}
+task: scan for malware -> {"type": "tool", "tool": "malware_scan", "args": []}
+task: update software weekly -> {"type": "tool", "tool": "update", "args": ["weekly"]}
+task: clean temp files -> {"type": "tool", "tool": "cleaner", "args": ["temp files"]}
+task: log user activity -> {"type": "tool", "tool": "logger", "args": ["user activity"]}
+task: send daily report -> {"type": "tool", "tool": "reporter", "args": ["daily"]}
+task: remind user to sleep on time -> {"type": "tool", "tool": "reminder", "args": ["sleep", "night"]}
+
+# Existing tasks (for diversity)
+task: Schedule a daily backup of the user documents folder
+task: Monitor CPU usage and raise an alert if it exceeds 90%
+task: Generate a weekly report summarizing internet usage
+task: Scan the system for malware every Sunday at 2 AM
+task: Check battery health and notify if capacity drops below 70%
+task: Auto-restart the application if it crashes unexpectedly
+task: Clean temporary files every Friday at midnight
+task: Log user activity and summarize it in a report every 24 hours
+task: Update installed software packages once every week
+task: Remind the user to stand up every hour
+task: Turn off Bluetooth if not connected to any device for 15 minutes
+task: Adjust screen brightness based on ambient light sensor
+task: Notify if disk space falls below 10% on any partition
+task: Sync notes across devices every 30 minutes
+task: Analyze file changes in the Documents folder and categorize them
+task: Detect suspicious login attempts and block IP addresses
+task: Send a daily motivational quote at 8 AM
+task: Create calendar events based on email summaries
+task: Convert screenshots to PDFs and archive them weekly
+task: Schedule a full system reboot every 10 days
+task: Track daily screen time and suggest limits
+task: Identify duplicate files and prompt for deletion
+task: Check for software license expirations
+task: Send usage statistics to the admin dashboard every night
+task: Run a network speed test every 6 hours
+task: Record microphone input during meetings and transcribe it
+task: Log error messages from background apps
+task: Analyze webcam footage for motion while user is away
+task: Schedule AI model retraining when new data is detected
+task: Backup critical files to external drive if connected
+task: Scan for unused apps and suggest uninstallation
+task: Fetch latest news headlines every morning at 7 AM
+task: Set DND mode during calendar events labeled 'Focus Time'
+task: Remind user to take eye breaks every 20 minutes
+task: Auto-mute microphone in noisy environments
+task: Generate summary of today's activity at 9 PM
+task: Track keyboard usage patterns and suggest optimizations
+task: Monitor network ports for unusual traffic
+task: Log changes to critical configuration files
+task: Validate integrity of important system binaries
+task: Identify newly installed applications and confirm with user
+task: Summarize GitHub activity of the day
+task: Warn if microphone is active for more than 30 minutes
+task: Adjust system performance based on active tasks
+task: Rotate logs every 24 hours and compress old ones
+task: Alert if weather conditions suggest potential device overheating
+task: Enable night mode based on sunset time
+task: Predict next system task based on history
+task: Auto-update AI plugins with new versions
+task: Generate changelog from recent file edits task: archive browser history on startup
+plan:
+- Identify location of browser history
+- Schedule action to archive it on startup
+- Log completion status
+
+task: organize weekly tasks during idle time
+plan:
+- Identify location of weekly tasks
+- Schedule action to organize it during idle time
+- Log completion status
+
+task: backup user photos at night
+plan:
+- Identify location of user photos
+- Schedule action to backup it at night
+- Log completion status
+
+task: organize battery health when low on space
+plan:
+- Identify location of battery health
+- Schedule action to organize it when low on space
+- Log completion status
+
+task: track browser history on startup
+plan:
+- Identify location of browser history
+- Schedule action to track it on startup
+- Log completion status
+
+task: clean temp files before shutdown
+plan:
+- Identify location of temp files
+- Schedule action to clean it before shutdown
+- Log completion status
+
+task: monitor CPU usage daily
+plan:
+- Identify location of CPU usage
+- Schedule action to monitor it daily
+- Log completion status
+
+task: notify user about downloads every 2 hours
+plan:
+- Identify location of downloads
+- Schedule action to notify it every 2 hours
+- Log completion status
+
+task: analyze system logs monthly
+plan:
+- Identify location of system logs
+- Schedule action to analyze it monthly
+- Log completion status
+
+task: optimize disk space when low on space
+plan:
+- Identify location of disk space
+- Schedule action to optimize it when low on space
+- Log completion status
+
+task: remind user to attend meetings every Monday
+plan:
+- Identify location of meeting notes
+- Schedule action to remind it every Monday
+- Log completion status
+
+task: backup browser history at night
+plan:
+- Identify location of browser history
+- Schedule action to backup it at night
+- Log completion status
+
+task: archive downloads during idle time
+plan:
+- Identify location of downloads
+- Schedule action to archive it during idle time
+- Log completion status
+
+task: clean system logs before shutdown
+plan:
+- Identify location of system logs
+- Schedule action to clean it before shutdown
+- Log completion status
+
+task: track battery health weekly
+plan:
+- Identify location of battery health
+- Schedule action to track it weekly
+- Log completion status
+
+... (repeat structure until 5000 examples)

@@ -1,0 +1,16 @@
+User Input: add two numbers 3 and 5
+Recent Memory:
+USER: add two numbers 3 and 5
+
+Expected Output:
+Alice: goal: add 3 and 5
+Bob: wait_for: Alice
+
+---
+User Input: subtract 7 from 10
+Recent Memory:
+USER: subtract 7 from 10
+
+Expected Output:
+Alice: goal: subtract 7 from 10
+Bob: wait_for: Alice 

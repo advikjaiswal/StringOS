@@ -1,0 +1,802 @@
+[
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"German\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to Spanish.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"Spanish\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"Spanish\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"Japanese\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"French\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Japanese\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Spanish.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Spanish\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Spanish\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Chinese\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to Spanish.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"Spanish\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"Spanish\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"Chinese\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Chinese\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"French\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"French\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"French\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"French\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Data privacy is crucial in modern software.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Data privacy is crucial in modern software.\\\", \\\"Chinese\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Chinese\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"German\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to Spanish.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"Spanish\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"Spanish\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to Spanish.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"Spanish\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"Spanish\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Chinese\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"German\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"German\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"Chinese\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"French\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"Chinese\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"French\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"Japanese\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Data privacy is crucial in modern software.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Data privacy is crucial in modern software.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Data privacy is crucial in modern software.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Data privacy is crucial in modern software.\\\", \\\"Chinese\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"German\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Data privacy is crucial in modern software.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Data privacy is crucial in modern software.\\\", \\\"Chinese\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Spanish.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Spanish\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Spanish\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'Machine learning models require careful tuning.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"Machine learning models require careful tuning.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"Machine learning models require careful tuning.\\\", \\\"Chinese\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to French.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"French\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"French\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"German\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'GPT-based agents can revolutionize business workflow.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"GPT-based agents can revolutionize business workflow.\\\", \\\"Chinese\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to Japanese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"Japanese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"Japanese\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'The quick brown fox jumps over the lazy dog.' to Chinese.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\", \"language\": \"Chinese\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"The quick brown fox jumps over the lazy dog.\\\", \\\"Chinese\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'Machine learning models require careful tuning.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"Machine learning models require careful tuning.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"Machine learning models require careful tuning.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"medium\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Summarize the following article: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Summarize text\", \"tool\": \"summarize_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"summarize_text(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"low\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"low\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Analyze sentiment of the review: 'Data privacy is crucial in modern software.'",
+    "completion": "<START>{\"task\": \"Analyze sentiment\", \"tool\": \"analyze_sentiment\", \"args\": {\"text\": \"Data privacy is crucial in modern software.\"}, \"subtasks\": [], \"command\": \"analyze_sentiment(\\\"Data privacy is crucial in modern software.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Classify the topic of this message: 'AgentOS is the future of AI automation.'",
+    "completion": "<START>{\"task\": \"Classify topic\", \"tool\": \"classify_topic\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\"}, \"subtasks\": [], \"command\": \"classify_topic(\\\"AgentOS is the future of AI automation.\\\")\", \"priority\": \"medium\", \"frequency\": \"one-time\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'GPT-based agents can revolutionize business workflow.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"GPT-based agents can revolutionize business workflow.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"GPT-based agents can revolutionize business workflow.\\\")\", \"priority\": \"high\", \"frequency\": \"weekly\"}<END>"
+  },
+  {
+    "prompt": "Extract keywords from the paragraph: 'The quick brown fox jumps over the lazy dog.'",
+    "completion": "<START>{\"task\": \"Extract keywords\", \"tool\": \"extract_keywords\", \"args\": {\"text\": \"The quick brown fox jumps over the lazy dog.\"}, \"subtasks\": [], \"command\": \"extract_keywords(\\\"The quick brown fox jumps over the lazy dog.\\\")\", \"priority\": \"medium\", \"frequency\": \"daily\"}<END>"
+  },
+  {
+    "prompt": "Translate the sentence: 'AgentOS is the future of AI automation.' to German.",
+    "completion": "<START>{\"task\": \"Translate text\", \"tool\": \"translate_text\", \"args\": {\"text\": \"AgentOS is the future of AI automation.\", \"language\": \"German\"}, \"subtasks\": [], \"command\": \"translate_text(\\\"AgentOS is the future of AI automation.\\\", \\\"German\\\")\", \"priority\": \"high\", \"frequency\": \"daily\"}<END>"
+  }
+]
