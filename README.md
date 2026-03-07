@@ -73,14 +73,6 @@ When given a prompt, `TinyGPT` doesn't respond with conversational chat—it dir
 ]
 ```
 
-## Demo Screenshots
-
-*(Add paths to your actual screenshots or GIFs below to showcase the agent working in the terminal)*
-
-![AgentOS Terminal Execution Demo](./placeholder_demo.png)
-
----
-
 ## Key Features
 
 - **Recursive Autonomous Agents**: Agents can intelligently break down high-level missions into sub-tasks and spawn sub-agents to handle them.
