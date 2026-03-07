@@ -1,0 +1,941 @@
+[
+  {
+    "prompt": "task: create a content calendar for social media",
+    "tasks": [
+      "Define steps to create a content calendar for social media",
+      "Research tools for create a content calendar for social media",
+      "Complete all steps for create a content calendar for social media",
+      "Verify completion of create a content calendar for social media completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: compare top savings accounts",
+    "tasks": [
+      "Define steps to compare top savings accounts",
+      "Research tools for compare top savings accounts",
+      "Complete all steps for compare top savings accounts",
+      "Verify completion of compare top savings accounts completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: analyze your spending habits",
+    "tasks": [
+      "Define steps to analyze your spending habits",
+      "Research tools for analyze your spending habits",
+      "Complete all steps for analyze your spending habits",
+      "Verify completion of analyze your spending habits completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: clean up email inbox",
+    "tasks": [
+      "Sort emails by importance",
+      "Delete or archive old emails",
+      "Unsubscribe from unwanted newsletters",
+      "Organize emails into folders",
+      "Set up filters for future emails"
+    ],
+    "frequency": "monthly",
+    "command": "python cleanup_inbox.py"
+  },
+  {
+    "prompt": "task: write a blog post on AI trends",
+    "tasks": [
+      "Research recent AI trends",
+      "Outline blog post structure",
+      "Write draft",
+      "Edit and proofread",
+      "Publish on blog platform"
+    ],
+    "frequency": "one-time",
+    "command": "python write_blog.py --topic 'AI trends'"
+  },
+  {
+    "prompt": "task: book reservations for a date night",
+    "tasks": [
+      "Define steps to book reservations for a date night",
+      "Research tools for book reservations for a date night",
+      "Complete all steps for book reservations for a date night",
+      "Verify completion of book reservations for a date night completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: set up monthly reminders for bills",
+    "tasks": [
+      "List all recurring bills",
+      "Choose a reminder app or calendar",
+      "Input bill due dates",
+      "Set up monthly notifications",
+      "Test reminder system"
+    ],
+    "frequency": "monthly",
+    "command": "python setup_reminders.py --type bills"
+  },
+  {
+    "prompt": "task: draft a professional email for leave",
+    "tasks": [
+      "Define steps to draft a professional email for leave",
+      "Research tools for draft a professional email for leave",
+      "Complete all steps for draft a professional email for leave",
+      "Verify completion of draft a professional email for leave completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: summarize a chapter from a textbook",
+    "tasks": [
+      "Define steps to summarize a chapter from a textbook",
+      "Research tools for summarize a chapter from a textbook",
+      "Complete all steps for summarize a chapter from a textbook",
+      "Verify completion of summarize a chapter from a textbook completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan to learn Python in 30 days",
+    "tasks": [
+      "Define steps to plan to learn Python in 30 days",
+      "Research tools for plan to learn Python in 30 days",
+      "Complete all steps for plan to learn Python in 30 days",
+      "Verify completion of plan to learn Python in 30 days completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: track all your expenses this week",
+    "tasks": [
+      "Define steps to track all your expenses this week",
+      "Research tools for track all your expenses this week",
+      "Complete all steps for track all your expenses this week",
+      "Verify completion of track all your expenses this week completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: set up a monthly budget",
+    "tasks": [
+      "Define steps to set up a monthly budget",
+      "Research tools for set up a monthly budget",
+      "Complete all steps for set up a monthly budget",
+      "Verify completion of set up a monthly budget completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a healthy meal prep routine",
+    "tasks": [
+      "Define steps to plan a healthy meal prep routine",
+      "Research tools for plan a healthy meal prep routine",
+      "Complete all steps for plan a healthy meal prep routine",
+      "Verify completion of plan a healthy meal prep routine completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prioritize your to-do list",
+    "tasks": [
+      "Define steps to prioritize your to-do list",
+      "Research tools for prioritize your to-do list",
+      "Complete all steps for prioritize your to-do list",
+      "Verify completion of prioritize your to-do list completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: set up a morning routine",
+    "tasks": [
+      "Define steps to set up a morning routine",
+      "Research tools for set up a morning routine",
+      "Complete all steps for set up a morning routine",
+      "Verify completion of set up a morning routine completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a weekly schedule",
+    "tasks": [
+      "Define steps to create a weekly schedule",
+      "Research tools for create a weekly schedule",
+      "Complete all steps for create a weekly schedule",
+      "Verify completion of create a weekly schedule completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your desktop",
+    "tasks": [
+      "Define steps to organize your desktop",
+      "Research tools for organize your desktop",
+      "Complete all steps for organize your desktop",
+      "Verify completion of organize your desktop completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prepare for a math exam",
+    "tasks": [
+      "Define steps to prepare for a math exam",
+      "Research tools for prepare for a math exam",
+      "Complete all steps for prepare for a math exam",
+      "Verify completion of prepare for a math exam completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a weekly cleaning schedule",
+    "tasks": [
+      "Define steps to create a weekly cleaning schedule",
+      "Research tools for create a weekly cleaning schedule",
+      "Complete all steps for create a weekly cleaning schedule",
+      "Verify completion of create a weekly cleaning schedule completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: write a resume for a data analyst role",
+    "tasks": [
+      "Define steps to write a resume for a data analyst role",
+      "Research tools for write a resume for a data analyst role",
+      "Complete all steps for write a resume for a data analyst role",
+      "Verify completion of write a resume for a data analyst role completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: update your LinkedIn profile",
+    "tasks": [
+      "Define steps to update your LinkedIn profile",
+      "Research tools for update your LinkedIn profile",
+      "Complete all steps for update your LinkedIn profile",
+      "Verify completion of update your LinkedIn profile completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: find online courses for UI/UX design",
+    "tasks": [
+      "Define steps to find online courses for UI/UX design",
+      "Research tools for find online courses for UI/UX design",
+      "Complete all steps for find online courses for UI/UX design",
+      "Verify completion of find online courses for UI/UX design completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: schedule a team meeting next week",
+    "tasks": [
+      "Define steps to schedule a team meeting next week",
+      "Research tools for schedule a team meeting next week",
+      "Complete all steps for schedule a team meeting next week",
+      "Verify completion of schedule a team meeting next week completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a birthday party for a friend",
+    "tasks": [
+      "Define steps to plan a birthday party for a friend",
+      "Research tools for plan a birthday party for a friend",
+      "Complete all steps for plan a birthday party for a friend",
+      "Verify completion of plan a birthday party for a friend completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: research top companies in AI",
+    "tasks": [
+      "Define steps to research top companies in AI",
+      "Research tools for research top companies in AI",
+      "Complete all steps for research top companies in AI",
+      "Verify completion of research top companies in AI completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a virtual game night with friends",
+    "tasks": [
+      "Define steps to plan a virtual game night with friends",
+      "Research tools for plan a virtual game night with friends",
+      "Complete all steps for plan a virtual game night with friends",
+      "Verify completion of plan a virtual game night with friends completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: summarize a news article",
+    "tasks": [
+      "Define steps to summarize a news article",
+      "Research tools for summarize a news article",
+      "Complete all steps for summarize a news article",
+      "Verify completion of summarize a news article completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: build a project portfolio website",
+    "tasks": [
+      "Define steps to build a project portfolio website",
+      "Research tools for build a project portfolio website",
+      "Complete all steps for build a project portfolio website",
+      "Verify completion of build a project portfolio website completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a savings plan for a new laptop",
+    "tasks": [
+      "Define steps to create a savings plan for a new laptop",
+      "Research tools for create a savings plan for a new laptop",
+      "Complete all steps for create a savings plan for a new laptop",
+      "Verify completion of create a savings plan for a new laptop completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize a weekend getaway",
+    "tasks": [
+      "Define steps to organize a weekend getaway",
+      "Research tools for organize a weekend getaway",
+      "Complete all steps for organize a weekend getaway",
+      "Verify completion of organize a weekend getaway completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: renew your driver's license",
+    "tasks": [
+      "Define steps to renew your driver's license",
+      "Research tools for renew your driver's license",
+      "Complete all steps for renew your driver's license",
+      "Verify completion of renew your driver's license completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a spaced repetition study plan",
+    "tasks": [
+      "Define steps to create a spaced repetition study plan",
+      "Research tools for create a spaced repetition study plan",
+      "Complete all steps for create a spaced repetition study plan",
+      "Verify completion of create a spaced repetition study plan completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: declutter your wardrobe",
+    "tasks": [
+      "Define steps to declutter your wardrobe",
+      "Research tools for declutter your wardrobe",
+      "Complete all steps for declutter your wardrobe",
+      "Verify completion of declutter your wardrobe completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prepare for a job interview",
+    "tasks": [
+      "Define steps to prepare for a job interview",
+      "Research tools for prepare for a job interview",
+      "Complete all steps for prepare for a job interview",
+      "Verify completion of prepare for a job interview completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: generate ideas for a YouTube channel",
+    "tasks": [
+      "Define steps to generate ideas for a YouTube channel",
+      "Research tools for generate ideas for a YouTube channel",
+      "Complete all steps for generate ideas for a YouTube channel",
+      "Verify completion of generate ideas for a YouTube channel completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a reading list for the month",
+    "tasks": [
+      "Define steps to create a reading list for the month",
+      "Research tools for create a reading list for the month",
+      "Complete all steps for create a reading list for the month",
+      "Verify completion of create a reading list for the month completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a personal knowledge management system",
+    "tasks": [
+      "Define steps to setup a personal knowledge management system",
+      "Research tools for setup a personal knowledge management system",
+      "Complete all steps for setup a personal knowledge management system",
+      "Verify completion of setup a personal knowledge management system completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your workspace for productivity",
+    "tasks": [
+      "Define steps to organize your workspace for productivity",
+      "Research tools for organize your workspace for productivity",
+      "Complete all steps for organize your workspace for productivity",
+      "Verify completion of organize your workspace for productivity completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: schedule weekly review sessions",
+    "tasks": [
+      "Define steps to schedule weekly review sessions",
+      "Research tools for schedule weekly review sessions",
+      "Complete all steps for schedule weekly review sessions",
+      "Verify completion of schedule weekly review sessions completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: track your personal habits",
+    "tasks": [
+      "Define steps to track your personal habits",
+      "Research tools for track your personal habits",
+      "Complete all steps for track your personal habits",
+      "Verify completion of track your personal habits completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: build a daily journal routine",
+    "tasks": [
+      "Define steps to build a daily journal routine",
+      "Research tools for build a daily journal routine",
+      "Complete all steps for build a daily journal routine",
+      "Verify completion of build a daily journal routine completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a monthly goals tracker",
+    "tasks": [
+      "Define steps to setup a monthly goals tracker",
+      "Research tools for setup a monthly goals tracker",
+      "Complete all steps for setup a monthly goals tracker",
+      "Verify completion of setup a monthly goals tracker completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: backup important files to cloud",
+    "tasks": [
+      "Define steps to backup important files to cloud",
+      "Research tools for backup important files to cloud",
+      "Complete all steps for backup important files to cloud",
+      "Verify completion of backup important files to cloud completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan your next vacation",
+    "tasks": [
+      "Define steps to plan your next vacation",
+      "Research tools for plan your next vacation",
+      "Complete all steps for plan your next vacation",
+      "Verify completion of plan your next vacation completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your study notes",
+    "tasks": [
+      "Define steps to organize your study notes",
+      "Research tools for organize your study notes",
+      "Complete all steps for organize your study notes",
+      "Verify completion of organize your study notes completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a vision board",
+    "tasks": [
+      "Define steps to create a vision board",
+      "Research tools for create a vision board",
+      "Complete all steps for create a vision board",
+      "Verify completion of create a vision board completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a digital detox weekend",
+    "tasks": [
+      "Define steps to plan a digital detox weekend",
+      "Research tools for plan a digital detox weekend",
+      "Complete all steps for plan a digital detox weekend",
+      "Verify completion of plan a digital detox weekend completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: set up a time-blocking calendar",
+    "tasks": [
+      "Define steps to set up a time-blocking calendar",
+      "Research tools for set up a time-blocking calendar",
+      "Complete all steps for set up a time-blocking calendar",
+      "Verify completion of set up a time-blocking calendar completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: research top books in your field",
+    "tasks": [
+      "Define steps to research top books in your field",
+      "Research tools for research top books in your field",
+      "Complete all steps for research top books in your field",
+      "Verify completion of research top books in your field completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a career roadmap",
+    "tasks": [
+      "Define steps to plan a career roadmap",
+      "Research tools for plan a career roadmap",
+      "Complete all steps for plan a career roadmap",
+      "Verify completion of plan a career roadmap completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a workout routine",
+    "tasks": [
+      "Define steps to setup a workout routine",
+      "Research tools for setup a workout routine",
+      "Complete all steps for setup a workout routine",
+      "Verify completion of setup a workout routine completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: compare different health insurance plans",
+    "tasks": [
+      "Define steps to compare different health insurance plans",
+      "Research tools for compare different health insurance plans",
+      "Complete all steps for compare different health insurance plans",
+      "Verify completion of compare different health insurance plans completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a self-improvement checklist",
+    "tasks": [
+      "Define steps to create a self-improvement checklist",
+      "Research tools for create a self-improvement checklist",
+      "Complete all steps for create a self-improvement checklist",
+      "Verify completion of create a self-improvement checklist completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan your weekly grocery shopping",
+    "tasks": [
+      "Define steps to plan your weekly grocery shopping",
+      "Research tools for plan your weekly grocery shopping",
+      "Complete all steps for plan your weekly grocery shopping",
+      "Verify completion of plan your weekly grocery shopping completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prepare a pitch deck",
+    "tasks": [
+      "Define steps to prepare a pitch deck",
+      "Research tools for prepare a pitch deck",
+      "Complete all steps for prepare a pitch deck",
+      "Verify completion of prepare a pitch deck completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: write a cover letter for your resume",
+    "tasks": [
+      "Define steps to write a cover letter for your resume",
+      "Research tools for write a cover letter for your resume",
+      "Complete all steps for write a cover letter for your resume",
+      "Verify completion of write a cover letter for your resume completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: list top YouTube channels to learn coding",
+    "tasks": [
+      "Define steps to list top YouTube channels to learn coding",
+      "Research tools for list top YouTube channels to learn coding",
+      "Complete all steps for list top YouTube channels to learn coding",
+      "Verify completion of list top YouTube channels to learn coding completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: track your daily screen time",
+    "tasks": [
+      "Define steps to track your daily screen time",
+      "Research tools for track your daily screen time",
+      "Complete all steps for track your daily screen time",
+      "Verify completion of track your daily screen time completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a backup of your phone data",
+    "tasks": [
+      "Define steps to create a backup of your phone data",
+      "Research tools for create a backup of your phone data",
+      "Complete all steps for create a backup of your phone data",
+      "Verify completion of create a backup of your phone data completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your browser bookmarks",
+    "tasks": [
+      "Define steps to organize your browser bookmarks",
+      "Research tools for organize your browser bookmarks",
+      "Complete all steps for organize your browser bookmarks",
+      "Verify completion of organize your browser bookmarks completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a shared calendar with your family",
+    "tasks": [
+      "Define steps to setup a shared calendar with your family",
+      "Research tools for setup a shared calendar with your family",
+      "Complete all steps for setup a shared calendar with your family",
+      "Verify completion of setup a shared calendar with your family completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a personal finance audit",
+    "tasks": [
+      "Define steps to plan a personal finance audit",
+      "Research tools for plan a personal finance audit",
+      "Complete all steps for plan a personal finance audit",
+      "Verify completion of plan a personal finance audit completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prepare a startup idea validation plan",
+    "tasks": [
+      "Define steps to prepare a startup idea validation plan",
+      "Research tools for prepare a startup idea validation plan",
+      "Complete all steps for prepare a startup idea validation plan",
+      "Verify completion of prepare a startup idea validation plan completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: set up a distraction-free work environment",
+    "tasks": [
+      "Define steps to set up a distraction-free work environment",
+      "Research tools for set up a distraction-free work environment",
+      "Complete all steps for set up a distraction-free work environment",
+      "Verify completion of set up a distraction-free work environment completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your photo library",
+    "tasks": [
+      "Define steps to organize your photo library",
+      "Research tools for organize your photo library",
+      "Complete all steps for organize your photo library",
+      "Verify completion of organize your photo library completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a GitHub repo for a new project",
+    "tasks": [
+      "Define steps to setup a GitHub repo for a new project",
+      "Research tools for setup a GitHub repo for a new project",
+      "Complete all steps for setup a GitHub repo for a new project",
+      "Verify completion of setup a GitHub repo for a new project completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: design a personal logo",
+    "tasks": [
+      "Define steps to design a personal logo",
+      "Research tools for design a personal logo",
+      "Complete all steps for design a personal logo",
+      "Verify completion of design a personal logo completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prepare your freelance portfolio",
+    "tasks": [
+      "Define steps to prepare your freelance portfolio",
+      "Research tools for prepare your freelance portfolio",
+      "Complete all steps for prepare your freelance portfolio",
+      "Verify completion of prepare your freelance portfolio completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: research trending skills in 2025",
+    "tasks": [
+      "Define steps to research trending skills in 2025",
+      "Research tools for research trending skills in 2025",
+      "Complete all steps for research trending skills in 2025",
+      "Verify completion of research trending skills in 2025 completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your taxes for the year",
+    "tasks": [
+      "Define steps to organize your taxes for the year",
+      "Research tools for organize your taxes for the year",
+      "Complete all steps for organize your taxes for the year",
+      "Verify completion of organize your taxes for the year completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a weekend learning schedule",
+    "tasks": [
+      "Define steps to create a weekend learning schedule",
+      "Research tools for create a weekend learning schedule",
+      "Complete all steps for create a weekend learning schedule",
+      "Verify completion of create a weekend learning schedule completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a secure password system",
+    "tasks": [
+      "Define steps to setup a secure password system",
+      "Research tools for setup a secure password system",
+      "Complete all steps for setup a secure password system",
+      "Verify completion of setup a secure password system completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: write your personal mission statement",
+    "tasks": [
+      "Define steps to write your personal mission statement",
+      "Research tools for write your personal mission statement",
+      "Complete all steps for write your personal mission statement",
+      "Verify completion of write your personal mission statement completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a minimalist wardrobe",
+    "tasks": [
+      "Define steps to plan a minimalist wardrobe",
+      "Research tools for plan a minimalist wardrobe",
+      "Complete all steps for plan a minimalist wardrobe",
+      "Verify completion of plan a minimalist wardrobe completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: track your monthly subscriptions",
+    "tasks": [
+      "Define steps to track your monthly subscriptions",
+      "Research tools for track your monthly subscriptions",
+      "Complete all steps for track your monthly subscriptions",
+      "Verify completion of track your monthly subscriptions completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a second brain in Notion",
+    "tasks": [
+      "Define steps to setup a second brain in Notion",
+      "Research tools for setup a second brain in Notion",
+      "Complete all steps for setup a second brain in Notion",
+      "Verify completion of setup a second brain in Notion completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your mobile apps by category",
+    "tasks": [
+      "Define steps to organize your mobile apps by category",
+      "Research tools for organize your mobile apps by category",
+      "Complete all steps for organize your mobile apps by category",
+      "Verify completion of organize your mobile apps by category completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: make a top 10 productivity tool list",
+    "tasks": [
+      "Define steps to make a top 10 productivity tool list",
+      "Research tools for make a top 10 productivity tool list",
+      "Complete all steps for make a top 10 productivity tool list",
+      "Verify completion of make a top 10 productivity tool list completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a home workspace upgrade",
+    "tasks": [
+      "Define steps to plan a home workspace upgrade",
+      "Research tools for plan a home workspace upgrade",
+      "Complete all steps for plan a home workspace upgrade",
+      "Verify completion of plan a home workspace upgrade completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: setup a local server for practice",
+    "tasks": [
+      "Define steps to setup a local server for practice",
+      "Research tools for setup a local server for practice",
+      "Complete all steps for setup a local server for practice",
+      "Verify completion of setup a local server for practice completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: organize your notes into topics",
+    "tasks": [
+      "Define steps to organize your notes into topics",
+      "Research tools for organize your notes into topics",
+      "Complete all steps for organize your notes into topics",
+      "Verify completion of organize your notes into topics completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: prepare a client onboarding checklist",
+    "tasks": [
+      "Define steps to prepare a client onboarding checklist",
+      "Research tools for prepare a client onboarding checklist",
+      "Complete all steps for prepare a client onboarding checklist",
+      "Verify completion of prepare a client onboarding checklist completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: create a personal OKR system",
+    "tasks": [
+      "Define steps to create a personal OKR system",
+      "Research tools for create a personal OKR system",
+      "Complete all steps for create a personal OKR system",
+      "Verify completion of create a personal OKR system completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: set up a learning-to-code roadmap",
+    "tasks": [
+      "Define steps to set up a learning-to-code roadmap",
+      "Research tools for set up a learning-to-code roadmap",
+      "Complete all steps for set up a learning-to-code roadmap",
+      "Verify completion of set up a learning-to-code roadmap completion"
+    ],
+    "frequency": "one-time",
+    "command": ""
+  },
+  {
+    "prompt": "task: plan a solo weekend getaway",
+    "tasks": [
+      "Choose a destination",
+      "Book transportation",
+      "Reserve accommodation",
+      "Pack essentials",
+      "Create an itinerary"
+    ],
+    "frequency": "one-time",
+    "command": "python plan_trip.py --destination '<destination>'"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "task: clean downloads weekly": "task: clean downloads weekly",
+  "task: monitor CPU usage daily": "task: monitor  \u2047 PU usage daily",
+  "clean downloads weekly": "clean downloads weekly",
+  "backup system logs weekly": "backup system logs weeklya",
+  "auto backup logs every Sunday": "auto backup logs every Sunday",
+  "delete old screenshots": "delete old screenshotsse",
+  "organize workspace every Friday": "organi \u2047 e workspace every  \u2047 riday",
+  "archive zoom recordings": "archive  \u2047 oom recordingsse",
+  "task: organize desktop and clean downloads folder": "You are a task planner agent. Return only a JSON response with the following fields: task, frequency, subtasks (list), command (bash or python). No extra text. task: organize desktop and clean downloads folder a monthly a monthly or apps to help with preated to help with Break down the task: plan a monthly remind to help with your Execute s",
+  "Write a plan to automate daily file backups.": "You are a task planner agent. Return only a JSON response with the following fields: task, frequency, subtasks (list), command (bash or python). No extra text. Write a plan to automate daily file backups. to help with created to help with create a weekly schedule a weekly schedule a monthly blog a monthly bs Break down the task: set up a monthly",
+  "task: plan a solo weekend getaway": "You are a task planner agent. Return only a JSON response with the following fields: task, frequency, subtasks (list), command (bash or python). No extra text. task: plan a solo weekend getaway subtasks related to help with created to help with created to help with created to help with created to help with cre",
+  "task: organize a weekend hiking trip": "You are a task planner agent. Return only a JSON response with the following fields: task, frequency, subtasks (list), command (bash or python). No extra text. task: organize a weekend hiking trip subtasks related to help with plan a bi to help with created top routine your top Execute subtasks related to"
+}

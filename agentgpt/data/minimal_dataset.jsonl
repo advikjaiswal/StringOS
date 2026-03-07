@@ -1,0 +1,6 @@
+[
+  {
+    "prompt": "Extract keywords from the paragraph: \"AgentOS is the future of AI automation.\"",
+    "completion": "{\n  \"task\": \"Extract keywords\",\n  \"tool\": \"extract_keywords\",\n  \"args\": {\n    \"text\": \"AgentOS is the future of AI automation.\"\n  },\n  \"subtasks\": [],\n  \"command\": \"extract_keywords('AgentOS is the future of AI automation.')\",\n  \"priority\": \"medium\"\n}"
+  }
+] 

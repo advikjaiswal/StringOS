@@ -1,0 +1,91 @@
+task: archive browser history on startup
+plan:
+- Identify location of browser history
+- Schedule action to archive it on startup
+- Log completion status
+
+task: organize weekly tasks during idle time
+plan:
+- Identify location of weekly tasks
+- Schedule action to organize it during idle time
+- Log completion status
+
+task: backup user photos at night
+plan:
+- Identify location of user photos
+- Schedule action to backup it at night
+- Log completion status
+
+task: organize battery health when low on space
+plan:
+- Identify location of battery health
+- Schedule action to organize it when low on space
+- Log completion status
+
+task: track browser history on startup
+plan:
+- Identify location of browser history
+- Schedule action to track it on startup
+- Log completion status
+
+task: clean temp files before shutdown
+plan:
+- Identify location of temp files
+- Schedule action to clean it before shutdown
+- Log completion status
+
+task: monitor CPU usage daily
+plan:
+- Identify location of CPU usage
+- Schedule action to monitor it daily
+- Log completion status
+
+task: notify user about downloads every 2 hours
+plan:
+- Identify location of downloads
+- Schedule action to notify it every 2 hours
+- Log completion status
+
+task: analyze system logs monthly
+plan:
+- Identify location of system logs
+- Schedule action to analyze it monthly
+- Log completion status
+
+task: optimize disk space when low on space
+plan:
+- Identify location of disk space
+- Schedule action to optimize it when low on space
+- Log completion status
+
+task: remind user to attend meetings every Monday
+plan:
+- Identify location of meeting notes
+- Schedule action to remind it every Monday
+- Log completion status
+
+task: backup browser history at night
+plan:
+- Identify location of browser history
+- Schedule action to backup it at night
+- Log completion status
+
+task: archive downloads during idle time
+plan:
+- Identify location of downloads
+- Schedule action to archive it during idle time
+- Log completion status
+
+task: clean system logs before shutdown
+plan:
+- Identify location of system logs
+- Schedule action to clean it before shutdown
+- Log completion status
+
+task: track battery health weekly
+plan:
+- Identify location of battery health
+- Schedule action to track it weekly
+- Log completion status
+
+... (repeat structure until 5000 examples)

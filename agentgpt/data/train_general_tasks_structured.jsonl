@@ -1,0 +1,767 @@
+[
+  {
+    "prompt": "task: create a content calendar for social media",
+    "tasks": [
+      "Break down the task: create a content calendar for social media",
+      "Identify tools or apps to help with create a content calendar for social media",
+      "Execute subtasks related to create a content calendar for social media",
+      "Review and confirm create a content calendar for social media completion"
+    ]
+  },
+  {
+    "prompt": "task: compare top savings accounts",
+    "tasks": [
+      "Break down the task: compare top savings accounts",
+      "Identify tools or apps to help with compare top savings accounts",
+      "Execute subtasks related to compare top savings accounts",
+      "Review and confirm compare top savings accounts completion"
+    ]
+  },
+  {
+    "prompt": "task: analyze your spending habits",
+    "tasks": [
+      "Break down the task: analyze your spending habits",
+      "Identify tools or apps to help with analyze your spending habits",
+      "Execute subtasks related to analyze your spending habits",
+      "Review and confirm analyze your spending habits completion"
+    ]
+  },
+  {
+    "prompt": "task: clean up email inbox",
+    "tasks": [
+      "Break down the task: clean up email inbox",
+      "Identify tools or apps to help with clean up email inbox",
+      "Execute subtasks related to clean up email inbox",
+      "Review and confirm clean up email inbox completion"
+    ]
+  },
+  {
+    "prompt": "task: write a blog post on AI trends",
+    "tasks": [
+      "Break down the task: write a blog post on AI trends",
+      "Identify tools or apps to help with write a blog post on AI trends",
+      "Execute subtasks related to write a blog post on AI trends",
+      "Review and confirm write a blog post on AI trends completion"
+    ]
+  },
+  {
+    "prompt": "task: book reservations for a date night",
+    "tasks": [
+      "Break down the task: book reservations for a date night",
+      "Identify tools or apps to help with book reservations for a date night",
+      "Execute subtasks related to book reservations for a date night",
+      "Review and confirm book reservations for a date night completion"
+    ]
+  },
+  {
+    "prompt": "task: set up monthly reminders for bills",
+    "tasks": [
+      "Break down the task: set up monthly reminders for bills",
+      "Identify tools or apps to help with set up monthly reminders for bills",
+      "Execute subtasks related to set up monthly reminders for bills",
+      "Review and confirm set up monthly reminders for bills completion"
+    ]
+  },
+  {
+    "prompt": "task: draft a professional email for leave",
+    "tasks": [
+      "Break down the task: draft a professional email for leave",
+      "Identify tools or apps to help with draft a professional email for leave",
+      "Execute subtasks related to draft a professional email for leave",
+      "Review and confirm draft a professional email for leave completion"
+    ]
+  },
+  {
+    "prompt": "task: summarize a chapter from a textbook",
+    "tasks": [
+      "Break down the task: summarize a chapter from a textbook",
+      "Identify tools or apps to help with summarize a chapter from a textbook",
+      "Execute subtasks related to summarize a chapter from a textbook",
+      "Review and confirm summarize a chapter from a textbook completion"
+    ]
+  },
+  {
+    "prompt": "task: plan to learn Python in 30 days",
+    "tasks": [
+      "Break down the task: plan to learn Python in 30 days",
+      "Identify tools or apps to help with plan to learn Python in 30 days",
+      "Execute subtasks related to plan to learn Python in 30 days",
+      "Review and confirm plan to learn Python in 30 days completion"
+    ]
+  },
+  {
+    "prompt": "task: track all your expenses this week",
+    "tasks": [
+      "Break down the task: track all your expenses this week",
+      "Identify tools or apps to help with track all your expenses this week",
+      "Execute subtasks related to track all your expenses this week",
+      "Review and confirm track all your expenses this week completion"
+    ]
+  },
+  {
+    "prompt": "task: set up a monthly budget",
+    "tasks": [
+      "Break down the task: set up a monthly budget",
+      "Identify tools or apps to help with set up a monthly budget",
+      "Execute subtasks related to set up a monthly budget",
+      "Review and confirm set up a monthly budget completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a healthy meal prep routine",
+    "tasks": [
+      "Break down the task: plan a healthy meal prep routine",
+      "Identify tools or apps to help with plan a healthy meal prep routine",
+      "Execute subtasks related to plan a healthy meal prep routine",
+      "Review and confirm plan a healthy meal prep routine completion"
+    ]
+  },
+  {
+    "prompt": "task: prioritize your to-do list",
+    "tasks": [
+      "Break down the task: prioritize your to-do list",
+      "Identify tools or apps to help with prioritize your to-do list",
+      "Execute subtasks related to prioritize your to-do list",
+      "Review and confirm prioritize your to-do list completion"
+    ]
+  },
+  {
+    "prompt": "task: set up a morning routine",
+    "tasks": [
+      "Break down the task: set up a morning routine",
+      "Identify tools or apps to help with set up a morning routine",
+      "Execute subtasks related to set up a morning routine",
+      "Review and confirm set up a morning routine completion"
+    ]
+  },
+  {
+    "prompt": "task: create a weekly schedule",
+    "tasks": [
+      "Break down the task: create a weekly schedule",
+      "Identify tools or apps to help with create a weekly schedule",
+      "Execute subtasks related to create a weekly schedule",
+      "Review and confirm create a weekly schedule completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your desktop",
+    "tasks": [
+      "Break down the task: organize your desktop",
+      "Identify tools or apps to help with organize your desktop",
+      "Execute subtasks related to organize your desktop",
+      "Review and confirm organize your desktop completion"
+    ]
+  },
+  {
+    "prompt": "task: prepare for a math exam",
+    "tasks": [
+      "Break down the task: prepare for a math exam",
+      "Identify tools or apps to help with prepare for a math exam",
+      "Execute subtasks related to prepare for a math exam",
+      "Review and confirm prepare for a math exam completion"
+    ]
+  },
+  {
+    "prompt": "task: create a weekly cleaning schedule",
+    "tasks": [
+      "Break down the task: create a weekly cleaning schedule",
+      "Identify tools or apps to help with create a weekly cleaning schedule",
+      "Execute subtasks related to create a weekly cleaning schedule",
+      "Review and confirm create a weekly cleaning schedule completion"
+    ]
+  },
+  {
+    "prompt": "task: write a resume for a data analyst role",
+    "tasks": [
+      "Break down the task: write a resume for a data analyst role",
+      "Identify tools or apps to help with write a resume for a data analyst role",
+      "Execute subtasks related to write a resume for a data analyst role",
+      "Review and confirm write a resume for a data analyst role completion"
+    ]
+  },
+  {
+    "prompt": "task: update your LinkedIn profile",
+    "tasks": [
+      "Break down the task: update your LinkedIn profile",
+      "Identify tools or apps to help with update your LinkedIn profile",
+      "Execute subtasks related to update your LinkedIn profile",
+      "Review and confirm update your LinkedIn profile completion"
+    ]
+  },
+  {
+    "prompt": "task: find online courses for UI/UX design",
+    "tasks": [
+      "Break down the task: find online courses for UI/UX design",
+      "Identify tools or apps to help with find online courses for UI/UX design",
+      "Execute subtasks related to find online courses for UI/UX design",
+      "Review and confirm find online courses for UI/UX design completion"
+    ]
+  },
+  {
+    "prompt": "task: schedule a team meeting next week",
+    "tasks": [
+      "Break down the task: schedule a team meeting next week",
+      "Identify tools or apps to help with schedule a team meeting next week",
+      "Execute subtasks related to schedule a team meeting next week",
+      "Review and confirm schedule a team meeting next week completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a birthday party for a friend",
+    "tasks": [
+      "Break down the task: plan a birthday party for a friend",
+      "Identify tools or apps to help with plan a birthday party for a friend",
+      "Execute subtasks related to plan a birthday party for a friend",
+      "Review and confirm plan a birthday party for a friend completion"
+    ]
+  },
+  {
+    "prompt": "task: research top companies in AI",
+    "tasks": [
+      "Break down the task: research top companies in AI",
+      "Identify tools or apps to help with research top companies in AI",
+      "Execute subtasks related to research top companies in AI",
+      "Review and confirm research top companies in AI completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a virtual game night with friends",
+    "tasks": [
+      "Break down the task: plan a virtual game night with friends",
+      "Identify tools or apps to help with plan a virtual game night with friends",
+      "Execute subtasks related to plan a virtual game night with friends",
+      "Review and confirm plan a virtual game night with friends completion"
+    ]
+  },
+  {
+    "prompt": "task: summarize a news article",
+    "tasks": [
+      "Break down the task: summarize a news article",
+      "Identify tools or apps to help with summarize a news article",
+      "Execute subtasks related to summarize a news article",
+      "Review and confirm summarize a news article completion"
+    ]
+  },
+  {
+    "prompt": "task: build a project portfolio website",
+    "tasks": [
+      "Break down the task: build a project portfolio website",
+      "Identify tools or apps to help with build a project portfolio website",
+      "Execute subtasks related to build a project portfolio website",
+      "Review and confirm build a project portfolio website completion"
+    ]
+  },
+  {
+    "prompt": "task: create a savings plan for a new laptop",
+    "tasks": [
+      "Break down the task: create a savings plan for a new laptop",
+      "Identify tools or apps to help with create a savings plan for a new laptop",
+      "Execute subtasks related to create a savings plan for a new laptop",
+      "Review and confirm create a savings plan for a new laptop completion"
+    ]
+  },
+  {
+    "prompt": "task: organize a weekend getaway",
+    "tasks": [
+      "Break down the task: organize a weekend getaway",
+      "Identify tools or apps to help with organize a weekend getaway",
+      "Execute subtasks related to organize a weekend getaway",
+      "Review and confirm organize a weekend getaway completion"
+    ]
+  },
+  {
+    "prompt": "task: renew your driver's license",
+    "tasks": [
+      "Break down the task: renew your driver's license",
+      "Identify tools or apps to help with renew your driver's license",
+      "Execute subtasks related to renew your driver's license",
+      "Review and confirm renew your driver's license completion"
+    ]
+  },
+  {
+    "prompt": "task: create a spaced repetition study plan",
+    "tasks": [
+      "Break down the task: create a spaced repetition study plan",
+      "Identify tools or apps to help with create a spaced repetition study plan",
+      "Execute subtasks related to create a spaced repetition study plan",
+      "Review and confirm create a spaced repetition study plan completion"
+    ]
+  },
+  {
+    "prompt": "task: declutter your wardrobe",
+    "tasks": [
+      "Break down the task: declutter your wardrobe",
+      "Identify tools or apps to help with declutter your wardrobe",
+      "Execute subtasks related to declutter your wardrobe",
+      "Review and confirm declutter your wardrobe completion"
+    ]
+  },
+  {
+    "prompt": "task: prepare for a job interview",
+    "tasks": [
+      "Break down the task: prepare for a job interview",
+      "Identify tools or apps to help with prepare for a job interview",
+      "Execute subtasks related to prepare for a job interview",
+      "Review and confirm prepare for a job interview completion"
+    ]
+  },
+  {
+    "prompt": "task: generate ideas for a YouTube channel",
+    "tasks": [
+      "Break down the task: generate ideas for a YouTube channel",
+      "Identify tools or apps to help with generate ideas for a YouTube channel",
+      "Execute subtasks related to generate ideas for a YouTube channel",
+      "Review and confirm generate ideas for a YouTube channel completion"
+    ]
+  },
+  {
+    "prompt": "task: create a reading list for the month",
+    "tasks": [
+      "Break down the task: create a reading list for the month",
+      "Identify tools or apps to help with create a reading list for the month",
+      "Execute subtasks related to create a reading list for the month",
+      "Review and confirm create a reading list for the month completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a personal knowledge management system",
+    "tasks": [
+      "Break down the task: setup a personal knowledge management system",
+      "Identify tools or apps to help with setup a personal knowledge management system",
+      "Execute subtasks related to setup a personal knowledge management system",
+      "Review and confirm setup a personal knowledge management system completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your workspace for productivity",
+    "tasks": [
+      "Break down the task: organize your workspace for productivity",
+      "Identify tools or apps to help with organize your workspace for productivity",
+      "Execute subtasks related to organize your workspace for productivity",
+      "Review and confirm organize your workspace for productivity completion"
+    ]
+  },
+  {
+    "prompt": "task: schedule weekly review sessions",
+    "tasks": [
+      "Break down the task: schedule weekly review sessions",
+      "Identify tools or apps to help with schedule weekly review sessions",
+      "Execute subtasks related to schedule weekly review sessions",
+      "Review and confirm schedule weekly review sessions completion"
+    ]
+  },
+  {
+    "prompt": "task: track your personal habits",
+    "tasks": [
+      "Break down the task: track your personal habits",
+      "Identify tools or apps to help with track your personal habits",
+      "Execute subtasks related to track your personal habits",
+      "Review and confirm track your personal habits completion"
+    ]
+  },
+  {
+    "prompt": "task: build a daily journal routine",
+    "tasks": [
+      "Break down the task: build a daily journal routine",
+      "Identify tools or apps to help with build a daily journal routine",
+      "Execute subtasks related to build a daily journal routine",
+      "Review and confirm build a daily journal routine completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a monthly goals tracker",
+    "tasks": [
+      "Break down the task: setup a monthly goals tracker",
+      "Identify tools or apps to help with setup a monthly goals tracker",
+      "Execute subtasks related to setup a monthly goals tracker",
+      "Review and confirm setup a monthly goals tracker completion"
+    ]
+  },
+  {
+    "prompt": "task: backup important files to cloud",
+    "tasks": [
+      "Break down the task: backup important files to cloud",
+      "Identify tools or apps to help with backup important files to cloud",
+      "Execute subtasks related to backup important files to cloud",
+      "Review and confirm backup important files to cloud completion"
+    ]
+  },
+  {
+    "prompt": "task: plan your next vacation",
+    "tasks": [
+      "Break down the task: plan your next vacation",
+      "Identify tools or apps to help with plan your next vacation",
+      "Execute subtasks related to plan your next vacation",
+      "Review and confirm plan your next vacation completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your study notes",
+    "tasks": [
+      "Break down the task: organize your study notes",
+      "Identify tools or apps to help with organize your study notes",
+      "Execute subtasks related to organize your study notes",
+      "Review and confirm organize your study notes completion"
+    ]
+  },
+  {
+    "prompt": "task: create a vision board",
+    "tasks": [
+      "Break down the task: create a vision board",
+      "Identify tools or apps to help with create a vision board",
+      "Execute subtasks related to create a vision board",
+      "Review and confirm create a vision board completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a digital detox weekend",
+    "tasks": [
+      "Break down the task: plan a digital detox weekend",
+      "Identify tools or apps to help with plan a digital detox weekend",
+      "Execute subtasks related to plan a digital detox weekend",
+      "Review and confirm plan a digital detox weekend completion"
+    ]
+  },
+  {
+    "prompt": "task: set up a time-blocking calendar",
+    "tasks": [
+      "Break down the task: set up a time-blocking calendar",
+      "Identify tools or apps to help with set up a time-blocking calendar",
+      "Execute subtasks related to set up a time-blocking calendar",
+      "Review and confirm set up a time-blocking calendar completion"
+    ]
+  },
+  {
+    "prompt": "task: research top books in your field",
+    "tasks": [
+      "Break down the task: research top books in your field",
+      "Identify tools or apps to help with research top books in your field",
+      "Execute subtasks related to research top books in your field",
+      "Review and confirm research top books in your field completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a career roadmap",
+    "tasks": [
+      "Break down the task: plan a career roadmap",
+      "Identify tools or apps to help with plan a career roadmap",
+      "Execute subtasks related to plan a career roadmap",
+      "Review and confirm plan a career roadmap completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a workout routine",
+    "tasks": [
+      "Break down the task: setup a workout routine",
+      "Identify tools or apps to help with setup a workout routine",
+      "Execute subtasks related to setup a workout routine",
+      "Review and confirm setup a workout routine completion"
+    ]
+  },
+  {
+    "prompt": "task: compare different health insurance plans",
+    "tasks": [
+      "Break down the task: compare different health insurance plans",
+      "Identify tools or apps to help with compare different health insurance plans",
+      "Execute subtasks related to compare different health insurance plans",
+      "Review and confirm compare different health insurance plans completion"
+    ]
+  },
+  {
+    "prompt": "task: create a self-improvement checklist",
+    "tasks": [
+      "Break down the task: create a self-improvement checklist",
+      "Identify tools or apps to help with create a self-improvement checklist",
+      "Execute subtasks related to create a self-improvement checklist",
+      "Review and confirm create a self-improvement checklist completion"
+    ]
+  },
+  {
+    "prompt": "task: plan your weekly grocery shopping",
+    "tasks": [
+      "Break down the task: plan your weekly grocery shopping",
+      "Identify tools or apps to help with plan your weekly grocery shopping",
+      "Execute subtasks related to plan your weekly grocery shopping",
+      "Review and confirm plan your weekly grocery shopping completion"
+    ]
+  },
+  {
+    "prompt": "task: prepare a pitch deck",
+    "tasks": [
+      "Break down the task: prepare a pitch deck",
+      "Identify tools or apps to help with prepare a pitch deck",
+      "Execute subtasks related to prepare a pitch deck",
+      "Review and confirm prepare a pitch deck completion"
+    ]
+  },
+  {
+    "prompt": "task: write a cover letter for your resume",
+    "tasks": [
+      "Break down the task: write a cover letter for your resume",
+      "Identify tools or apps to help with write a cover letter for your resume",
+      "Execute subtasks related to write a cover letter for your resume",
+      "Review and confirm write a cover letter for your resume completion"
+    ]
+  },
+  {
+    "prompt": "task: list top YouTube channels to learn coding",
+    "tasks": [
+      "Break down the task: list top YouTube channels to learn coding",
+      "Identify tools or apps to help with list top YouTube channels to learn coding",
+      "Execute subtasks related to list top YouTube channels to learn coding",
+      "Review and confirm list top YouTube channels to learn coding completion"
+    ]
+  },
+  {
+    "prompt": "task: track your daily screen time",
+    "tasks": [
+      "Break down the task: track your daily screen time",
+      "Identify tools or apps to help with track your daily screen time",
+      "Execute subtasks related to track your daily screen time",
+      "Review and confirm track your daily screen time completion"
+    ]
+  },
+  {
+    "prompt": "task: create a backup of your phone data",
+    "tasks": [
+      "Break down the task: create a backup of your phone data",
+      "Identify tools or apps to help with create a backup of your phone data",
+      "Execute subtasks related to create a backup of your phone data",
+      "Review and confirm create a backup of your phone data completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your browser bookmarks",
+    "tasks": [
+      "Break down the task: organize your browser bookmarks",
+      "Identify tools or apps to help with organize your browser bookmarks",
+      "Execute subtasks related to organize your browser bookmarks",
+      "Review and confirm organize your browser bookmarks completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a shared calendar with your family",
+    "tasks": [
+      "Break down the task: setup a shared calendar with your family",
+      "Identify tools or apps to help with setup a shared calendar with your family",
+      "Execute subtasks related to setup a shared calendar with your family",
+      "Review and confirm setup a shared calendar with your family completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a personal finance audit",
+    "tasks": [
+      "Break down the task: plan a personal finance audit",
+      "Identify tools or apps to help with plan a personal finance audit",
+      "Execute subtasks related to plan a personal finance audit",
+      "Review and confirm plan a personal finance audit completion"
+    ]
+  },
+  {
+    "prompt": "task: prepare a startup idea validation plan",
+    "tasks": [
+      "Break down the task: prepare a startup idea validation plan",
+      "Identify tools or apps to help with prepare a startup idea validation plan",
+      "Execute subtasks related to prepare a startup idea validation plan",
+      "Review and confirm prepare a startup idea validation plan completion"
+    ]
+  },
+  {
+    "prompt": "task: set up a distraction-free work environment",
+    "tasks": [
+      "Break down the task: set up a distraction-free work environment",
+      "Identify tools or apps to help with set up a distraction-free work environment",
+      "Execute subtasks related to set up a distraction-free work environment",
+      "Review and confirm set up a distraction-free work environment completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your photo library",
+    "tasks": [
+      "Break down the task: organize your photo library",
+      "Identify tools or apps to help with organize your photo library",
+      "Execute subtasks related to organize your photo library",
+      "Review and confirm organize your photo library completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a GitHub repo for a new project",
+    "tasks": [
+      "Break down the task: setup a GitHub repo for a new project",
+      "Identify tools or apps to help with setup a GitHub repo for a new project",
+      "Execute subtasks related to setup a GitHub repo for a new project",
+      "Review and confirm setup a GitHub repo for a new project completion"
+    ]
+  },
+  {
+    "prompt": "task: design a personal logo",
+    "tasks": [
+      "Break down the task: design a personal logo",
+      "Identify tools or apps to help with design a personal logo",
+      "Execute subtasks related to design a personal logo",
+      "Review and confirm design a personal logo completion"
+    ]
+  },
+  {
+    "prompt": "task: prepare your freelance portfolio",
+    "tasks": [
+      "Break down the task: prepare your freelance portfolio",
+      "Identify tools or apps to help with prepare your freelance portfolio",
+      "Execute subtasks related to prepare your freelance portfolio",
+      "Review and confirm prepare your freelance portfolio completion"
+    ]
+  },
+  {
+    "prompt": "task: research trending skills in 2025",
+    "tasks": [
+      "Break down the task: research trending skills in 2025",
+      "Identify tools or apps to help with research trending skills in 2025",
+      "Execute subtasks related to research trending skills in 2025",
+      "Review and confirm research trending skills in 2025 completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your taxes for the year",
+    "tasks": [
+      "Break down the task: organize your taxes for the year",
+      "Identify tools or apps to help with organize your taxes for the year",
+      "Execute subtasks related to organize your taxes for the year",
+      "Review and confirm organize your taxes for the year completion"
+    ]
+  },
+  {
+    "prompt": "task: create a weekend learning schedule",
+    "tasks": [
+      "Break down the task: create a weekend learning schedule",
+      "Identify tools or apps to help with create a weekend learning schedule",
+      "Execute subtasks related to create a weekend learning schedule",
+      "Review and confirm create a weekend learning schedule completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a secure password system",
+    "tasks": [
+      "Break down the task: setup a secure password system",
+      "Identify tools or apps to help with setup a secure password system",
+      "Execute subtasks related to setup a secure password system",
+      "Review and confirm setup a secure password system completion"
+    ]
+  },
+  {
+    "prompt": "task: write your personal mission statement",
+    "tasks": [
+      "Break down the task: write your personal mission statement",
+      "Identify tools or apps to help with write your personal mission statement",
+      "Execute subtasks related to write your personal mission statement",
+      "Review and confirm write your personal mission statement completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a minimalist wardrobe",
+    "tasks": [
+      "Break down the task: plan a minimalist wardrobe",
+      "Identify tools or apps to help with plan a minimalist wardrobe",
+      "Execute subtasks related to plan a minimalist wardrobe",
+      "Review and confirm plan a minimalist wardrobe completion"
+    ]
+  },
+  {
+    "prompt": "task: track your monthly subscriptions",
+    "tasks": [
+      "Break down the task: track your monthly subscriptions",
+      "Identify tools or apps to help with track your monthly subscriptions",
+      "Execute subtasks related to track your monthly subscriptions",
+      "Review and confirm track your monthly subscriptions completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a second brain in Notion",
+    "tasks": [
+      "Break down the task: setup a second brain in Notion",
+      "Identify tools or apps to help with setup a second brain in Notion",
+      "Execute subtasks related to setup a second brain in Notion",
+      "Review and confirm setup a second brain in Notion completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your mobile apps by category",
+    "tasks": [
+      "Break down the task: organize your mobile apps by category",
+      "Identify tools or apps to help with organize your mobile apps by category",
+      "Execute subtasks related to organize your mobile apps by category",
+      "Review and confirm organize your mobile apps by category completion"
+    ]
+  },
+  {
+    "prompt": "task: make a top 10 productivity tool list",
+    "tasks": [
+      "Break down the task: make a top 10 productivity tool list",
+      "Identify tools or apps to help with make a top 10 productivity tool list",
+      "Execute subtasks related to make a top 10 productivity tool list",
+      "Review and confirm make a top 10 productivity tool list completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a home workspace upgrade",
+    "tasks": [
+      "Break down the task: plan a home workspace upgrade",
+      "Identify tools or apps to help with plan a home workspace upgrade",
+      "Execute subtasks related to plan a home workspace upgrade",
+      "Review and confirm plan a home workspace upgrade completion"
+    ]
+  },
+  {
+    "prompt": "task: setup a local server for practice",
+    "tasks": [
+      "Break down the task: setup a local server for practice",
+      "Identify tools or apps to help with setup a local server for practice",
+      "Execute subtasks related to setup a local server for practice",
+      "Review and confirm setup a local server for practice completion"
+    ]
+  },
+  {
+    "prompt": "task: organize your notes into topics",
+    "tasks": [
+      "Break down the task: organize your notes into topics",
+      "Identify tools or apps to help with organize your notes into topics",
+      "Execute subtasks related to organize your notes into topics",
+      "Review and confirm organize your notes into topics completion"
+    ]
+  },
+  {
+    "prompt": "task: prepare a client onboarding checklist",
+    "tasks": [
+      "Break down the task: prepare a client onboarding checklist",
+      "Identify tools or apps to help with prepare a client onboarding checklist",
+      "Execute subtasks related to prepare a client onboarding checklist",
+      "Review and confirm prepare a client onboarding checklist completion"
+    ]
+  },
+  {
+    "prompt": "task: create a personal OKR system",
+    "tasks": [
+      "Break down the task: create a personal OKR system",
+      "Identify tools or apps to help with create a personal OKR system",
+      "Execute subtasks related to create a personal OKR system",
+      "Review and confirm create a personal OKR system completion"
+    ]
+  },
+  {
+    "prompt": "task: set up a learning-to-code roadmap",
+    "tasks": [
+      "Break down the task: set up a learning-to-code roadmap",
+      "Identify tools or apps to help with set up a learning-to-code roadmap",
+      "Execute subtasks related to set up a learning-to-code roadmap",
+      "Review and confirm set up a learning-to-code roadmap completion"
+    ]
+  },
+  {
+    "prompt": "task: plan a solo weekend getaway",
+    "tasks": [
+      "Break down the task: plan a solo weekend getaway",
+      "Identify tools or apps to help with plan a solo weekend getaway",
+      "Execute subtasks related to plan a solo weekend getaway",
+      "Review and confirm plan a solo weekend getaway completion"
+    ]
+  }
+]

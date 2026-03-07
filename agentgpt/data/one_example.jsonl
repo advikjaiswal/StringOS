@@ -1,0 +1,6 @@
+[
+  {
+    "prompt": "Extract keywords from the paragraph: \"AgentOS is the future of AI automation.\"",
+    "completion": "<START>{\"tool\": \"extract_keywords\"}<END>"
+  }
+] 

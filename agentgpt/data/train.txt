@@ -1,0 +1,147 @@
+Translate the sentence to Spanish: "I love programming."
+<START>{"tool": "translate_text", "args": {"language": "Spanish"}}<END>
+
+Extract keywords from the paragraph: "AgentOS is the future of AI automation."
+<START>{"tool": "extract_keywords"}<END>
+
+Summarize this document: "The agent architecture includes memory, planning, and execution layers."
+<START>{"tool": "summarize_document"}<END>
+
+Convert this date to ISO format: "July 4, 2025"
+<START>{"tool": "convert_date", "args": {"format": "ISO"}}<END>
+
+Generate a title for this blog: "A new operating system for intelligent agents."
+<START>{"tool": "generate_title"}<END>
+
+Correct the grammar in this sentence: "He don't like code."
+<START>{"tool": "fix_grammar"}<END>
+
+Detect the language: "Bonjour tout le monde"
+<START>{"tool": "detect_language"}<END>
+
+Explain this code: "for i in range(5): print(i)"
+<START>{"tool": "explain_code"}<END>
+
+Convert this text to speech: "Hello, welcome to AgentOS."
+<START>{"tool": "text_to_speech"}<END>
+
+Generate hashtags for: "Building a futuristic agent-based OS"
+<START>{"tool": "generate_hashtags"}<END>
+
+Get the sentiment of: "This is absolutely amazing!"
+<START>{"tool": "analyze_sentiment"}<END>
+
+Extract the email addresses from this text: "Contact me at john@example.com or jane@agentos.io"
+<START>{"tool": "extract_emails"}<END>
+
+Reformat this JSON to be pretty printed: '{"a":1,"b":2}'
+<START>{"tool": "prettify_json"}<END>
+
+Check the spelling of: "Ths is a smple txt."
+<START>{"tool": "spell_check"}<END>
+
+Generate a blog outline for: "Future of autonomous AI systems"
+<START>{"tool": "generate_outline"}<END>
+
+Convert the temperature to Celsius: "100°F"
+<START>{"tool": "convert_temperature", "args": {"unit": "Celsius"}}<END>
+
+Write a tweet about: "Launching AgentOS"
+<START>{"tool": "generate_tweet"}<END>
+
+Generate a list of tags for: "OpenAI, LLM, autonomous agents"
+<START>{"tool": "generate_tags"}<END>
+
+Answer this question: "What is reinforcement learning?"
+<START>{"tool": "answer_question"}<END>
+
+Convert the following currency to INR: "$100"
+<START>{"tool": "convert_currency", "args": {"to": "INR"}}<END>
+
+Generate a YouTube title for: "How to build an AI agent"
+<START>{"tool": "generate_youtube_title"}<END>
+
+Summarize this article in 3 bullet points: "Agents are transforming how software works..."
+<START>{"tool": "summarize_bullets", "args": {"count": 3}}<END>
+
+Find names in the text: "Alice and Bob went to Paris."
+<START>{"tool": "extract_named_entities", "args": {"type": "person"}}<END>
+
+Create a to-do list from: "I need to call John, write a blog post, and do laundry."
+<START>{"tool": "generate_todo"}<END>
+
+Turn this into a polite request: "Send me the report."
+<START>{"tool": "rephrase_polite"}<END>
+
+Find the topic of this paragraph: "LLMs are powerful models trained on large text corpora."
+<START>{"tool": "detect_topic"}<END>
+
+Make this message shorter: "Hi, I was wondering if you could maybe take a look at my code?"
+<START>{"tool": "shorten_text"}<END>
+
+Generate a JSON schema for this structure: "user has name, age, and email"
+<START>{"tool": "generate_schema"}<END>
+
+Convert this Markdown to HTML: "# Hello world"
+<START>{"tool": "markdown_to_html"}<END>
+
+Generate a tweet thread from: "The story of how I built AgentOS..."
+<START>{"tool": "generate_thread"}<END>
+
+Generate a product description for: "AI-powered agent platform"
+<START>{"tool": "product_description"}<END>
+
+Write a short LinkedIn post about: "Finished building an open-source LLM agent"
+<START>{"tool": "generate_linkedin_post"}<END>
+
+Find acronyms in this text: "NASA and GPT are powerful technologies."
+<START>{"tool": "extract_acronyms"}<END>
+
+Expand this acronym: "LLM"
+<START>{"tool": "expand_acronym", "args": {"acronym": "LLM"}}<END>
+
+Write a one-line summary: "AgentOS automates entire workflows using agents."
+<START>{"tool": "generate_one_liner"}<END>
+
+Detect passive voice in this sentence: "The file was deleted by the user."
+<START>{"tool": "detect_passive_voice"}<END>
+
+Convert this sentence to active voice: "The door was opened by John."
+<START>{"tool": "to_active_voice"}<END>
+
+Write a short paragraph on: "The importance of AI safety"
+<START>{"tool": "generate_paragraph"}<END>
+
+Generate a motivational quote
+<START>{"tool": "generate_quote", "args": {"type": "motivational"}}<END>
+
+Simplify this explanation: "Transformers operate using self-attention mechanisms..."
+<START>{"tool": "simplify_text"}<END>
+
+Generate an analogy for: "Training an AI model"
+<START>{"tool": "generate_analogy"}<END>
+
+Explain this term in simple words: "Backpropagation"
+<START>{"tool": "explain_term"}<END>
+
+Write an email subject line for: "AgentOS demo tomorrow"
+<START>{"tool": "generate_email_subject"}<END>
+
+Generate a title for this video: "A walkthrough of how autonomous agents work"
+<START>{"tool": "generate_video_title"}<END>
+
+Extract dates from: "We met on Jan 5 and the deadline is July 31"
+<START>{"tool": "extract_dates"}<END>
+
+Generate a pros and cons list for: "Using LLMs for task automation"
+<START>{"tool": "generate_pros_cons"}<END>
+
+Categorize this sentence: "I want to book a flight"
+<START>{"tool": "intent_classify"}<END>
+
+Convert this list to bullet points: "Wake up, brush teeth, write code"
+<START>{"tool": "list_to_bullets"}<END>
+
+Find time durations in: "The test took 2 hours and the trip took 3 days"
+<START>{"tool": "extract_durations"}<END>
+

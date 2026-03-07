@@ -1,0 +1,73 @@
+[
+  {
+    "task": "Summarize a research paper and email the summary",
+    "frequency": "one-time",
+    "subtasks": ["Read research paper", "Summarize key findings", "Draft email", "Send email"],
+    "command": "email_sender"
+  },
+  {
+    "task": "Translate a legal contract to Hindi and store it in a file",
+    "frequency": "one-time",
+    "subtasks": ["Read contract", "Translate content to Hindi", "Save translated version to file"],
+    "command": "file_writer"
+  },
+  {
+    "task": "Scrape latest tech news and compile into a newsletter",
+    "frequency": "daily",
+    "subtasks": ["Scrape news websites", "Extract headlines", "Summarize articles", "Format newsletter"],
+    "command": "web_scraper"
+  },
+  {
+    "task": "Extract keywords from customer feedback",
+    "frequency": "weekly",
+    "subtasks": ["Read feedback", "Analyze sentiment", "Extract important keywords"],
+    "command": "file_writer"
+  },
+  {
+    "task": "Generate a marketing plan for a new product launch",
+    "frequency": "one-time",
+    "subtasks": ["Research product", "Analyze market", "Create campaign outline"],
+    "command": "file_writer"
+  },
+  {
+    "task": "Create a YouTube video script and upload it",
+    "frequency": "one-time",
+    "subtasks": ["Write script", "Generate thumbnail", "Upload video"],
+    "command": "start_youtube_channel"
+  },
+  {
+    "task": "Analyze sales data and generate a report",
+    "frequency": "monthly",
+    "subtasks": ["Load sales data", "Generate graphs", "Create PDF report"],
+    "command": "file_writer"
+  },
+  {
+    "task": "Send out a reminder email to all users for subscription renewal",
+    "frequency": "monthly",
+    "subtasks": ["Load user list", "Draft reminder message", "Send bulk email"],
+    "command": "email_sender"
+  },
+  {
+    "task": "Monitor competitor pricing and store it",
+    "frequency": "daily",
+    "subtasks": ["Scrape competitor sites", "Extract prices", "Update pricing file"],
+    "command": "web_scraper"
+  },
+  {
+    "task": "Create a landing page with product details and pricing",
+    "frequency": "one-time",
+    "subtasks": ["Design layout", "Write copy", "Add product images", "Publish page"],
+    "command": "file_writer"
+  },
+  {"prompt": "Create a blog post and publish it on Medium", "tasks": {"task": "Create a blog post and publish it on Medium", "frequency": "one-time", "subtasks": ["Research trending topics", "Generate article draft", "Proofread and edit", "Publish on Medium"], "command": "publish_blog"}},
+  {"prompt": "Extract key insights from sales data and send a summary report", "tasks": {"task": "Extract key insights from sales data and send a summary report", "frequency": "one-time", "subtasks": ["Load latest sales dataset", "Perform trend analysis", "Generate bullet-point insights", "Email the report"], "command": "analyze_and_email"}},
+  {"prompt": "Set up an online store for digital products", "tasks": {"task": "Set up an online store for digital products", "frequency": "one-time", "subtasks": ["Create product listings", "Set up payment gateway", "Write product descriptions", "Launch the store"], "command": "setup_online_store"}},
+  {"prompt": "Plan a product launch campaign", "tasks": {"task": "Plan a product launch campaign", "frequency": "one-time", "subtasks": ["Create launch timeline", "Draft marketing emails", "Design promotional graphics", "Schedule social media posts"], "command": "plan_launch_campaign"}},
+  {"prompt": "Summarize a research paper and create a presentation", "tasks": {"task": "Summarize a research paper and create a presentation", "frequency": "one-time", "subtasks": ["Parse and summarize PDF", "Extract key findings", "Create slides for each finding", "Export presentation"], "command": "summarize_and_present"}},
+  {"prompt": "Translate an article and generate a tweet thread summary", "tasks": {"task": "Translate an article and generate a tweet thread summary", "frequency": "one-time", "subtasks": ["Translate article to target language", "Extract main points", "Split into tweet-sized chunks", "Post as thread"], "command": "translate_and_tweet"}},
+  {"prompt": "Compile user feedback and suggest product improvements", "tasks": {"task": "Compile user feedback and suggest product improvements", "frequency": "one-time", "subtasks": ["Collect feedback from multiple sources", "Cluster related comments", "Identify improvement opportunities", "Generate product suggestions"], "command": "analyze_feedback"}},
+  {"prompt": "Schedule weekly content for a brand’s Instagram page", "tasks": {"task": "Schedule weekly content for a brand’s Instagram page", "frequency": "one-time", "subtasks": ["Pick content themes", "Create image assets", "Write captions and hashtags", "Schedule posts"], "command": "schedule_instagram"}},
+  {"prompt": "Design a landing page for an online course", "tasks": {"task": "Design a landing page for an online course", "frequency": "one-time", "subtasks": ["Gather course details", "Generate layout mockup", "Write compelling copy", "Export HTML"], "command": "design_landing_page"}},
+  {"prompt": "Generate an investor pitch deck for a startup", "tasks": {"task": "Generate an investor pitch deck for a startup", "frequency": "one-time", "subtasks": ["Define key slides", "Add startup stats and visuals", "Refine narrative", "Export pitch deck"], "command": "create_pitch_deck"}}
+]
+  

@@ -1,0 +1,63 @@
+task: organize files -> {"type": "tool", "tool": "sort", "args": ["files"]}
+task: remind user daily -> {"type": "tool", "tool": "reminder", "args": ["daily"]}
+task: backup documents at 2 AM -> {"type": "tool", "tool": "backup", "args": ["documents", "2 AM"]}
+task: check battery health -> {"type": "tool", "tool": "battery_check", "args": []}
+task: monitor CPU usage -> {"type": "tool", "tool": "cpu_monitor", "args": []}
+task: scan for malware -> {"type": "tool", "tool": "malware_scan", "args": []}
+task: update software weekly -> {"type": "tool", "tool": "update", "args": ["weekly"]}
+task: clean temp files -> {"type": "tool", "tool": "cleaner", "args": ["temp files"]}
+task: log user activity -> {"type": "tool", "tool": "logger", "args": ["user activity"]}
+task: send daily report -> {"type": "tool", "tool": "reporter", "args": ["daily"]}
+task: remind user to sleep on time -> {"type": "tool", "tool": "reminder", "args": ["sleep", "night"]}
+
+# Existing tasks (for diversity)
+task: Schedule a daily backup of the user documents folder
+task: Monitor CPU usage and raise an alert if it exceeds 90%
+task: Generate a weekly report summarizing internet usage
+task: Scan the system for malware every Sunday at 2 AM
+task: Check battery health and notify if capacity drops below 70%
+task: Auto-restart the application if it crashes unexpectedly
+task: Clean temporary files every Friday at midnight
+task: Log user activity and summarize it in a report every 24 hours
+task: Update installed software packages once every week
+task: Remind the user to stand up every hour
+task: Turn off Bluetooth if not connected to any device for 15 minutes
+task: Adjust screen brightness based on ambient light sensor
+task: Notify if disk space falls below 10% on any partition
+task: Sync notes across devices every 30 minutes
+task: Analyze file changes in the Documents folder and categorize them
+task: Detect suspicious login attempts and block IP addresses
+task: Send a daily motivational quote at 8 AM
+task: Create calendar events based on email summaries
+task: Convert screenshots to PDFs and archive them weekly
+task: Schedule a full system reboot every 10 days
+task: Track daily screen time and suggest limits
+task: Identify duplicate files and prompt for deletion
+task: Check for software license expirations
+task: Send usage statistics to the admin dashboard every night
+task: Run a network speed test every 6 hours
+task: Record microphone input during meetings and transcribe it
+task: Log error messages from background apps
+task: Analyze webcam footage for motion while user is away
+task: Schedule AI model retraining when new data is detected
+task: Backup critical files to external drive if connected
+task: Scan for unused apps and suggest uninstallation
+task: Fetch latest news headlines every morning at 7 AM
+task: Set DND mode during calendar events labeled 'Focus Time'
+task: Remind user to take eye breaks every 20 minutes
+task: Auto-mute microphone in noisy environments
+task: Generate summary of today's activity at 9 PM
+task: Track keyboard usage patterns and suggest optimizations
+task: Monitor network ports for unusual traffic
+task: Log changes to critical configuration files
+task: Validate integrity of important system binaries
+task: Identify newly installed applications and confirm with user
+task: Summarize GitHub activity of the day
+task: Warn if microphone is active for more than 30 minutes
+task: Adjust system performance based on active tasks
+task: Rotate logs every 24 hours and compress old ones
+task: Alert if weather conditions suggest potential device overheating
+task: Enable night mode based on sunset time
+task: Predict next system task based on history
+task: Auto-update AI plugins with new versions
+task: Generate changelog from recent file edits 

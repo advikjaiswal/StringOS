@@ -1,0 +1,5 @@
+Extract keywords from the paragraph: "AgentOS is the future of AI automation."<START>{"tool": "extract_keywords"}<END>
+Summarize the paragraph: "AgentOS is the future of AI automation."<START>{"tool": "summarize_text"}<END>
+Translate the paragraph to Spanish: "AgentOS is the future of AI automation."<START>{"tool": "translate_text"}<END>
+Extract keywords from this: "LLMs can act as planners."<START>{"tool": "extract_keywords"}<END>
+Summarize: "LLMs can act as planners."<START>{"tool": "summarize_text"}<END>

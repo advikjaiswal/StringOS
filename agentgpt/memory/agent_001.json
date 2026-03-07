@@ -1,0 +1,22 @@
+{
+  "id": "agent_001",
+  "name": "Strategist",
+  "parent": null,
+  "mission": "Plan operation",
+  "status": "active",
+  "tools_used": [
+    "weather_api"
+  ],
+  "logs": [],
+  "failures": [
+    {
+      "reason": "timeout",
+      "timestamp": "2025-06-28T06:10:00.924704"
+    }
+  ],
+  "children": [
+    "agent_002"
+  ],
+  "created_at": "2025-06-28T06:10:00.924091",
+  "last_updated": "2025-06-28T06:10:00.924883"
+}

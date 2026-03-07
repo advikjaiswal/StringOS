@@ -1,0 +1,20 @@
+[
+  {
+    "input": "task: analyze drone logs for altitude anomalies",
+    "output": [
+      "1. Load log files",
+      "2. Parse altitude field",
+      "3. Check for spikes or drops beyond threshold",
+      "4. Raise anomaly flag if found"
+    ]
+  },
+  {
+    "input": "task: generate python script to schedule background tasks",
+    "output": [
+      "1. Import schedule and time libraries",
+      "2. Define the task function",
+      "3. Use schedule.every().seconds.do()",
+      "4. Start infinite loop to run pending"
+    ]
+  }
+]
