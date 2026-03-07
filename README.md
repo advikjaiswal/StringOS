@@ -1,53 +1,109 @@
 # AgentOS
 
-AgentOS is a framework for creating and running autonomous AI agents. It is designed to act as an operating system for agents, breaking down complex natural language tasks into actionable, structured plans, and executing them using a customized suite of tools.
+AgentOS is a framework for creating and running autonomous AI agents. It acts as an operating system for agents, breaking down complex natural language tasks into actionable, structured plans, and executing them using a customized suite of tools. 
 
 At its core, AgentOS operates using a completely local, custom-trained transformer model (`TinyGPT`), providing end-to-end control from mission planning to task execution.
 
-##  Key Features
+## Architecture Diagram
 
-- **Recursive Autonomous Agents**: Agents can intelligently break down high-level missions into sub-tasks and spawn sub-agents to handle them recursively.
-- **Custom Local LLM (`TinyGPT`)**: Built from scratch using PyTorch, `TinyGPT` parses user requests and acts as the "brain," outputting structured JSON plans.
-- **Centralized Orchestration**: The `AgentKernel` orchestrates the complete flow—managing memory, invoking the planner, and executing tools based on the generated plan.
-- **Extensible Tool Registry**: A plug-and-play tool system where agents can run bash commands, scrape the web, send emails, or execute custom Python functions.
-- **Memory Management**: Agents maintain short-term memory of context state and a planner memory of past execution plans to dramatically speed up recurrent tasks.
+```mermaid
+graph TD;
+    User([User Prompt]) --> Main[main.py / RootAgent];
+    Main --> AK[AgentKernel / Orchestrator];
+    AK --> Planner[PlannerAgent];
+    
+    subgraph "AgentGPT (The Brain)"
+        Planner --> TinyGPT[TinyGPT Local Model];
+        TinyGPT --> JSON[Structured JSON Plan];
+    end
+    
+    JSON --> Executor[PlannerExecutor];
+    
+    subgraph "AgentOS (The Runtime Environment)"
+        Executor --> Memory[MemoryEngine];
+        Executor --> Tools[ToolRegistry];
+        Tools --> Tool1[Scraping];
+        Tools --> Tool2[Filesystem];
+        Tools --> ToolN[Custom Scripts...];
+    end
+    
+    Tools --> AK;
+```
 
-##  System Architecture
+## Custom Transformer Model (`TinyGPT`)
 
-The project is broadly divided into two main subsystems:
+AgentOS relies on `TinyGPT`, a lightweight, custom-built Transformer model written from scratch in PyTorch. 
+- **Architecture**: It utilizes token and positional embeddings, followed by a stack of self-attention blocks (`nn.TransformerEncoderLayer`), normalized using LayerNorm, and capped with a linear head mapped to the custom SentencePiece vocabulary size.
+- **Inference**: The model features a custom `generate` loop for autoregressive inference, generating tokens one-by-one to formulate actionable tool plans.
 
-### 1. `agentos` (The Runtime Engine)
-This is the core execution environment where agents live and work.
-- **`recursive_agent.py`**: Contains the `Agent` class which recursively spawns `child_agents` if a task requires multiple steps mapped out by the planner.
-- **`agent_kernel.py` & `planner_kernel.py`**: The main orchestration layers. They manage context memory, request plans from the local model, and pass those plans to the `PlannerExecutor`.
-- **`planner_agent.py`**: Acts as the bridge that formulates the exact prompt containing context and tools to feed into the GPT model for task breakdown.
-- **`memory_engine.py`**: Manages reading, writing, and updating JSON-based local memory (`agent_memory.json` / `planner_memory.json`).
-- **`tools/` and `tools_general.py`**: Implementations for specific actions the agent can take, such as `web_scraper`, `bash_runner`, or macOS-specific file cleanup operations. These are registered in `tool_registry.json`.
+## Training Pipeline
 
-### 2. `agentgpt` (The Intelligence Core)
-This subsystem handles the AI and planning capabilities.
-- **`model/tinygpt.py`**: A lightweight PyTorch implementation of a Decoder-Only Transformer (similar to GPT). It features token/positional embeddings, multi-head self-attention, and a causal generation loop.
-- **`training/train_general_gpt.py`**: The training script that fine-tunes `TinyGPT` on prompt-completion pairs to specifically output structured JSON tool calls instead of conversational text.
-- **`tokenizer/spm.model`**: Uses a custom SentencePiece tokenizer for efficient text encoding/decoding.
+The repository includes a dedicated pipeline to train the `TinyGPT` model to output deterministic structured plans instead of open-ended conversational text:
+1. **Data Preparation**: Training data consists of raw prompt-completion pairs where the prompt is a natural language task (e.g., "Extract keywords...") and the completion is a structured JSON tool call (e.g., `<START>{"tool": "extract_keywords"}<END>`).
+2. **Tokenization**: The pipeline uses a custom `SentencePiece` tokenizer (`spm.model`) trained on the specific command corpus. 
+3. **Training Script**: Run `agentgpt/training/train_general_gpt.py`. The model learns using standard causal language modeling (`CrossEntropyLoss` shifted by one token) and calculates gradients optimized via AdamW over batches.
+4. **Weights Base**: The final output is bundled into `model_general_sp.pth`, which contains both the serialized `state_dict` and the tokenizer path.
 
-## 🛠️ Getting Started
+## Example JSON Planning Output
+
+When given a prompt, `TinyGPT` doesn't respond with conversational chat—it directly outputs a strict, actionable JSON outline:
+
+**User Prompt:**  
+`Extract keywords from the following paragraph and email me the results: 'AgentOS is the future of autonomous task execution and AI-driven productivity.'`
+
+**Planner Output:**
+```json
+[
+  {
+    "type": "tool",
+    "tool": "extract_keywords",
+    "args": {
+      "text": "AgentOS is the future of autonomous task execution and AI-driven productivity."
+    }
+  },
+  {
+    "type": "tool",
+    "tool": "send_email",
+    "args": {
+      "to": "me@example.com",
+      "subject": "Extracted Keywords",
+      "body": "AgentOS, autonomous, AI-driven"
+    }
+  }
+]
+```
+
+## Demo Screenshots
+
+*(Add paths to your actual screenshots or GIFs below to showcase the agent working in the terminal)*
+
+![AgentOS Terminal Execution Demo](./placeholder_demo.png)
+
+---
+
+## Key Features
+
+- **Recursive Autonomous Agents**: Agents can intelligently break down high-level missions into sub-tasks and spawn sub-agents to handle them.
+- **Custom Local LLM**: No API keys required. Everything runs locally on the integrated PyTorch `TinyGPT` architecture.
+- **Centralized Orchestration**: The `AgentKernel` manages context variables alongside short-term and long-term memory.
+- **Extensible Tool Registry**: A plug-and-play tool system where agents can run bash commands, scrape the web, send emails, or execute custom Python functions via `tool_registry.json`.
+
+## Getting Started
 
 ### Prerequisites
 - Python 3.10+
-- PyTorch
-- SentencePiece
+- `PyTorch`
+- `sentencepiece`
+- `beautifulsoup4`
 
 *(It is recommended to use the generated `venv` or `venv311` for isolating dependencies).*
 
 ### Training the Model
-If you want to train `TinyGPT` on new customized tool schemas or prompt-completion pairs:
 ```bash
 python agentgpt/training/train_general_gpt.py
 ```
-This requires `agentgpt/data/train.txt` to be present and populated. The script will save the updated weights as `model_general_sp.pth`.
 
-### Running the Agent Kernel
-To test the core `AgentKernel` operating with the planner and executing a hardcoded prompt:
+### Running the Agent Kernel (System Test)
 ```bash
 python agentos/agent_kernel.py
 ```
@@ -57,13 +113,12 @@ To start the root agent with an interactive prompt:
 ```bash
 python main.py
 ```
-*Prompt Example:* `Enter task for Root Agent: Extract keywords from the phrase "AgentOS is great" and email the result.`
 
-##  Extending AgentOS (Adding New Tools)
+## Extending AgentOS (Adding New Tools)
 
 You can easily equip AgentOS with new capabilities. 
 1. **Write the Tool**: Create your Python function in `agentos/tools.py`.
 2. **Register the Schema**: Open `tool_registry.json` and add your function's signature, expected arguments, and module name.
-3. **Load the Tool**: Ensure `AgentKernel.load_tools()` registers it with the `PlannerExecutor`.
+3. **Load the Tool**: Ensure `AgentKernel.load_tools()` points to your new implementation.
 
-Next time the `PlannerAgent` processes a task, it will naturally incorporate the new tool into its plan!
+Next time the `PlannerAgent` processes a task, it will automatically leverage your new capabilities!
