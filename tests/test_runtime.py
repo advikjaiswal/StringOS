@@ -64,6 +64,59 @@ class RuntimeTests(unittest.TestCase):
         with self.assertRaises(PlanValidationError):
             self.runtime.execute_plan([{"tool": "echo", "max_retries": 99}])
 
+    def test_rejects_duplicate_ids_before_execution(self):
+        calls = 0
+
+        def counted(text):
+            nonlocal calls
+            calls += 1
+            return text
+
+        self.registry.register("counted", counted)
+        with self.assertRaises(PlanValidationError):
+            self.runtime.execute_plan(
+                [
+                    {"id": "same", "tool": "counted", "args": {"text": "first"}},
+                    {"id": "same", "tool": "counted", "args": {"text": "second"}},
+                ]
+            )
+        self.assertEqual(calls, 0)
+
+    def test_rejects_missing_reference_before_execution(self):
+        calls = 0
+
+        def counted(text):
+            nonlocal calls
+            calls += 1
+            return text
+
+        self.registry.register("counted", counted)
+        with self.assertRaises(PlanValidationError):
+            self.runtime.execute_plan(
+                [
+                    {"id": "first", "tool": "counted", "args": {"text": "hello"}},
+                    {
+                        "id": "second",
+                        "tool": "echo",
+                        "args": {"text": {"$ref": "missing"}},
+                    },
+                ]
+            )
+        self.assertEqual(calls, 0)
+
+    def test_rejects_forward_reference_before_execution(self):
+        with self.assertRaises(PlanValidationError):
+            self.runtime.execute_plan(
+                [
+                    {
+                        "id": "first",
+                        "tool": "echo",
+                        "args": {"text": {"$ref": "second"}},
+                    },
+                    {"id": "second", "tool": "echo", "args": {"text": "hello"}},
+                ]
+            )
+
     def test_writes_machine_readable_trace(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "trace.json"
