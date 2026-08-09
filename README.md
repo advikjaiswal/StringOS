@@ -1,116 +1,115 @@
-# AgentOS
+# StringOS
 
-AgentOS is a framework for creating and running autonomous AI agents. It acts as an operating system for agents, breaking down complex natural language tasks into actionable, structured plans, and executing them using a customized suite of tools. 
+StringOS is an **experimental runtime for reliable, auditable tool-using agents**. The current research prototype focuses on the execution layer: validating planner output, running tools, recovering from transient failures with bounded retries, and producing structured traces that make agent behaviour inspectable.
 
-At its core, AgentOS operates using a completely local, custom-trained transformer model (`TinyGPT`), providing end-to-end control from mission planning to task execution.
+This repository started as a broader autonomous-agent/"agent OS" experiment. The scope is intentionally narrower now: make one execution path measurable and reproducible before adding more autonomy.
 
-## Architecture Diagram
+## What works today
+
+- A single documented plan schema (`tool`, `args`, optional `id` and `max_retries`)
+- Explicit tool registration and unknown-tool rejection before execution
+- Passing earlier tool results to later calls using `{"$ref": "step_id"}`
+- Bounded retries for transient tool failures
+- JSON execution traces containing attempts, latency, status, errors, and result previews
+- A zero-dependency reliability demo with deterministic failure injection
+- Unit tests for execution, references, validation, retries, failure exhaustion, and trace persistence
+
+## What is experimental
+
+- `agentgpt/` contains an early custom TinyGPT planner experiment trained on a very small command corpus. It is **not** the default production planner and should not be interpreted as a general-purpose language model.
+- The older `agentos/` modules contain exploratory code from earlier iterations. The supported entry point is the `stringos/` package and `main.py` described below.
+- Autonomous recursive planning, permission policies, and model-driven recovery are research directions, not completed features.
+
+## Runtime architecture
 
 ```mermaid
-graph TD;
-    User([User Prompt]) --> Main[main.py / RootAgent];
-    Main --> AK[AgentKernel / Orchestrator];
-    AK --> Planner[PlannerAgent];
-    
-    subgraph "AgentGPT (The Brain)"
-        Planner --> TinyGPT[TinyGPT Local Model];
-        TinyGPT --> JSON[Structured JSON Plan];
-    end
-    
-    JSON --> Executor[PlannerExecutor];
-    
-    subgraph "AgentOS (The Runtime Environment)"
-        Executor --> Memory[MemoryEngine];
-        Executor --> Tools[ToolRegistry];
-        Tools --> Tool1[Scraping];
-        Tools --> Tool2[Filesystem];
-        Tools --> ToolN[Custom Scripts...];
-    end
-    
-    Tools --> AK;
+flowchart LR
+    P[Planner or test fixture] --> V[Plan validation]
+    V --> R[StringOS runtime]
+    R --> T[Tool registry]
+    T --> X[Tool execution]
+    X -->|success| C[Result context]
+    X -->|transient failure| B[Bounded retry]
+    B --> X
+    X --> E[Structured execution trace]
+    C --> R
 ```
 
-## Custom Transformer Model (`TinyGPT`)
+The planner is deliberately outside the runtime boundary. A local model, hosted model, human, or benchmark fixture can emit the same schema. This lets planner quality and execution reliability be evaluated separately.
 
-AgentOS relies on `TinyGPT`, a lightweight, custom-built Transformer model written from scratch in PyTorch. 
-- **Architecture**: It utilizes token and positional embeddings, followed by a stack of self-attention blocks (`nn.TransformerEncoderLayer`), normalized using LayerNorm, and capped with a linear head mapped to the custom SentencePiece vocabulary size.
-- **Inference**: The model features a custom `generate` loop for autoregressive inference, generating tokens one-by-one to formulate actionable tool plans.
+## Quick start
 
-## Training Pipeline
+Requires Python 3.10+ and no third-party packages for the default runtime.
 
-The repository includes a dedicated pipeline to train the `TinyGPT` model to output deterministic structured plans instead of open-ended conversational text:
-1. **Data Preparation**: Training data consists of raw prompt-completion pairs where the prompt is a natural language task (e.g., "Extract keywords...") and the completion is a structured JSON tool call (e.g., `<START>{"tool": "extract_keywords"}<END>`).
-2. **Tokenization**: The pipeline uses a custom `SentencePiece` tokenizer (`spm.model`) trained on the specific command corpus. 
-3. **Training Script**: Run `agentgpt/training/train_general_gpt.py`. The model learns using standard causal language modeling (`CrossEntropyLoss` shifted by one token) and calculates gradients optimized via AdamW over batches.
-4. **Weights Base**: The final output is bundled into `model_general_sp.pth`, which contains both the serialized `state_dict` and the tokenizer path.
+```bash
+git clone https://github.com/advikjaiswal/StringOS.git
+cd StringOS
+python main.py
+```
 
-## Example JSON Planning Output
+The demo reads a text file, summarizes it, injects one transient write failure, retries the tool, writes the result, and saves a machine-readable trace:
 
-When given a prompt, `TinyGPT` doesn't respond with conversational chat—it directly outputs a strict, actionable JSON outline:
+```text
+StringOS reliability demo
+-------------------------
+OK    read     tool=read_text      attempt=1 ...
+OK    summary  tool=summarize_text attempt=1 ...
+RETRY write    tool=write_text     attempt=1 ... (OSError: injected transient failure)
+OK    write    tool=write_text     attempt=2 ...
 
-**User Prompt:**  
-`Extract keywords from the following paragraph and email me the results: 'AgentOS is the future of autonomous task execution and AI-driven productivity.'`
+completed=True
+output=.stringos_demo/summary.txt
+trace=.stringos_demo/trace.json
+```
 
-**Planner Output:**
+Run the tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+## Plan schema
+
 ```json
 [
   {
-    "type": "tool",
-    "tool": "extract_keywords",
-    "args": {
-      "text": "AgentOS is the future of autonomous task execution and AI-driven productivity."
-    }
+    "id": "read",
+    "tool": "read_text",
+    "args": {"path": "notes.txt"}
   },
   {
-    "type": "tool",
-    "tool": "send_email",
-    "args": {
-      "to": "me@example.com",
-      "subject": "Extracted Keywords",
-      "body": "AgentOS, autonomous, AI-driven"
-    }
+    "id": "summary",
+    "tool": "summarize_text",
+    "args": {"text": {"$ref": "read"}}
+  },
+  {
+    "id": "write",
+    "tool": "write_text",
+    "args": {"path": "summary.txt", "content": {"$ref": "summary"}},
+    "max_retries": 1
   }
 ]
 ```
 
-## Key Features
+`max_retries` is capped at three. The runtime rejects unknown tools and malformed plans before beginning execution.
 
-- **Recursive Autonomous Agents**: Agents can intelligently break down high-level missions into sub-tasks and spawn sub-agents to handle them.
-- **Custom Local LLM**: No API keys required. Everything runs locally on the integrated PyTorch `TinyGPT` architecture.
-- **Centralized Orchestration**: The `AgentKernel` manages context variables alongside short-term and long-term memory.
-- **Extensible Tool Registry**: A plug-and-play tool system where agents can run bash commands, scrape the web, send emails, or execute custom Python functions via `tool_registry.json`.
+## Current research questions
 
-## Getting Started
+The next useful experiments are deliberately measurable:
 
-### Prerequisites
-- Python 3.10+
-- `PyTorch`
-- `sentencepiece`
-- `beautifulsoup4`
+1. How often do different planners produce schema-valid plans and correct tool selections?
+2. How much do bounded retry and validation policies improve task completion under injected tool failures?
+3. Which execution-trace features are most useful for diagnosing long-horizon agent failures?
+4. How should approval checkpoints be represented without coupling policy decisions to individual tools?
 
-*(It is recommended to use the generated `venv` or `venv311` for isolating dependencies).*
+Planned evaluation metrics include plan-validity rate, tool-selection accuracy, end-to-end task success, recovery success under injected failures, and hallucinated-tool-call rate.
 
-### Training the Model
-```bash
-python agentgpt/training/train_general_gpt.py
-```
+## TinyGPT experiment
 
-### Running the Agent Kernel (System Test)
-```bash
-python agentos/agent_kernel.py
-```
+The legacy `agentgpt/` directory contains a small Transformer experiment trained from scratch with SentencePiece and PyTorch. Its dataset is intentionally small and is best treated as an educational planner experiment. Optional dependencies are listed in `requirements-experimental.txt`.
 
-### Running the Interactive Agent (Entry Point)
-To start the root agent with an interactive prompt:
-```bash
-python main.py
-```
+The default StringOS runtime does **not** depend on TinyGPT. Future work will add a proper held-out evaluation before making claims about planner generalization.
 
-## Extending AgentOS (Adding New Tools)
+## Project status
 
-You can easily equip AgentOS with new capabilities. 
-1. **Write the Tool**: Create your Python function in `agentos/tools.py`.
-2. **Register the Schema**: Open `tool_registry.json` and add your function's signature, expected arguments, and module name.
-3. **Load the Tool**: Ensure `AgentKernel.load_tools()` points to your new implementation.
-
-Next time the `PlannerAgent` processes a task, it will automatically leverage your new capabilities!
+Research prototype. The goal is reproducible evidence about agent execution reliability—not a claim that StringOS is a complete autonomous operating system.
