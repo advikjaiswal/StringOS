@@ -82,6 +82,23 @@ class AgentRuntime:
             return {key: AgentRuntime._resolve(item, results) for key, item in value.items()}
         return value
 
+    @staticmethod
+    def _result_references(value: Any) -> set[str]:
+        if isinstance(value, dict) and set(value) == {"$ref"}:
+            ref = value["$ref"]
+            if not isinstance(ref, str) or not ref:
+                raise PlanValidationError("Result references must name a non-empty step id")
+            return {ref}
+        if isinstance(value, list):
+            return set().union(
+                *(AgentRuntime._result_references(item) for item in value), set()
+            )
+        if isinstance(value, dict):
+            return set().union(
+                *(AgentRuntime._result_references(item) for item in value.values()), set()
+            )
+        return set()
+
     def execute_plan(
         self,
         plan: Any,
@@ -93,18 +110,33 @@ class AgentRuntime:
             raise PlanValidationError("Plan must be a non-empty list of tool-call objects")
 
         validated = [self._validate_step(step, i) for i, step in enumerate(plan)]
-        for step in validated:
+        step_ids: list[str] = []
+        prior_ids: set[str] = set()
+        for index, step in enumerate(validated):
+            raw_id = step.get("id")
+            if raw_id is not None and (not isinstance(raw_id, str) or not raw_id):
+                raise PlanValidationError(f"Step {index} 'id' must be a non-empty string")
+            step_id = raw_id or f"step_{index + 1}"
+            if step_id in prior_ids:
+                raise PlanValidationError(f"Duplicate step id: {step_id}")
+
+            references = self._result_references(step.get("args", {}))
+            unavailable = references - prior_ids
+            if unavailable:
+                names = ", ".join(sorted(unavailable))
+                raise PlanValidationError(
+                    f"Step {index} references unavailable earlier result(s): {names}"
+                )
+
             self.registry.get(step["tool"])
+            step_ids.append(step_id)
+            prior_ids.add(step_id)
 
         events: list[ExecutionEvent] = []
         results: dict[str, Any] = {}
         completed = True
 
-        for index, step in enumerate(validated):
-            step_id = str(step.get("id") or f"step_{index + 1}")
-            if step_id in results:
-                raise PlanValidationError(f"Duplicate step id: {step_id}")
-
+        for step, step_id in zip(validated, step_ids):
             tool_name = step["tool"]
             tool = self.registry.get(tool_name)
             max_retries = step.get("max_retries", 0)
