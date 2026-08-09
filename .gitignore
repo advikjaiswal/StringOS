@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+venv311/
+.DS_Store
+.stringos_demo/
+*.pth
+agent_memory.json
+memory_store.json

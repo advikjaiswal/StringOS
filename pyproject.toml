@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stringos-agent-runtime"
+version = "0.1.0"
+description = "Experimental runtime for reliable, auditable tool-using agents"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["stringos*"]
