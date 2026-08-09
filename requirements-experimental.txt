@@ -1,0 +1,5 @@
+# Optional dependencies for the legacy TinyGPT planner experiment.
+torch
+sentencepiece
+numpy
+tqdm
