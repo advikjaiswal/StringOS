@@ -128,6 +128,100 @@ class RuntimeTests(unittest.TestCase):
             self.assertTrue(trace["completed"])
             self.assertEqual(trace["events"][0]["tool"], "echo")
 
+    def test_sensitive_step_stops_until_approved(self):
+        calls = 0
+
+        def sensitive_write(text):
+            nonlocal calls
+            calls += 1
+            return text
+
+        self.registry.register("sensitive_write", sensitive_write)
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "sensitive_write",
+                    "args": {"text": "send"},
+                    "requires_approval": True,
+                }
+            ]
+        )
+
+        self.assertFalse(report["completed"])
+        self.assertEqual(report["awaiting_approval"], "write")
+        self.assertEqual(calls, 0)
+
+    def test_sensitive_step_runs_after_approval(self):
+        calls = []
+
+        def sensitive_write(text):
+            calls.append(text)
+            return text
+
+        self.registry.register("sensitive_write", sensitive_write)
+        runtime = AgentRuntime(self.registry, approved_steps={"write"})
+        report = runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "sensitive_write",
+                    "args": {"text": "send"},
+                    "requires_approval": True,
+                }
+            ]
+        )
+
+        self.assertTrue(report["completed"])
+        self.assertEqual(report["results"]["write"], "send")
+        self.assertEqual(calls, ["send"])
+
+    def test_checkpoint_prevents_duplicate_idempotent_step_on_replay(self):
+        calls = []
+
+        def enqueue(lead_id):
+            calls.append(lead_id)
+            return {"queued": lead_id}
+
+        self.registry.register("enqueue", enqueue)
+        plan = [
+            {
+                "id": "followup",
+                "tool": "enqueue",
+                "args": {"lead_id": "L-400"},
+                "idempotency_key": "followup:L-400",
+            }
+        ]
+        self.runtime.execute_plan(plan)
+        resumed = AgentRuntime.from_checkpoint(
+            self.registry,
+            self.runtime.export_checkpoint(),
+        )
+        replay = resumed.execute_plan(plan)
+
+        self.assertTrue(replay["completed"])
+        self.assertEqual(replay["results"]["followup"], {"queued": "L-400"})
+        self.assertEqual(calls, ["L-400"])
+
+    def test_trace_records_failure_class(self):
+        def temporary_failure():
+            raise OSError("temporary")
+
+        def permanent_failure():
+            raise ValueError("bad request")
+
+        self.registry.register("temporary_failure", temporary_failure)
+        self.registry.register("permanent_failure", permanent_failure)
+        transient_report = self.runtime.execute_plan(
+            [{"id": "temporary", "tool": "temporary_failure", "max_retries": 0}]
+        )
+        report = self.runtime.execute_plan(
+            [{"id": "permanent", "tool": "permanent_failure", "max_retries": 0}]
+        )
+
+        self.assertEqual(transient_report["events"][0]["failure_class"], "transient")
+        self.assertEqual(report["events"][0]["failure_class"], "permanent")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -20,6 +20,7 @@ class ExecutionEvent:
     duration_ms: float
     error: str | None = None
     result_preview: str | None = None
+    failure_class: str | None = None
 
 
 class ToolRegistry:
@@ -50,8 +51,33 @@ class AgentRuntime:
     This keeps planner quality separate from execution reliability.
     """
 
-    def __init__(self, registry: ToolRegistry) -> None:
+    def __init__(
+        self,
+        registry: ToolRegistry,
+        *,
+        approved_steps: set[str] | None = None,
+        idempotency_results: dict[str, Any] | None = None,
+    ) -> None:
         self.registry = registry
+        self.approved_steps = approved_steps or set()
+        self._idempotency_results = idempotency_results or {}
+
+    @classmethod
+    def from_checkpoint(
+        cls,
+        registry: ToolRegistry,
+        checkpoint: dict[str, Any],
+        *,
+        approved_steps: set[str] | None = None,
+    ) -> AgentRuntime:
+        return cls(
+            registry,
+            approved_steps=approved_steps,
+            idempotency_results=dict(checkpoint.get("idempotency_results", {})),
+        )
+
+    def export_checkpoint(self) -> dict[str, Any]:
+        return {"idempotency_results": dict(self._idempotency_results)}
 
     @staticmethod
     def _validate_step(step: Any, index: int) -> dict[str, Any]:
@@ -67,6 +93,12 @@ class AgentRuntime:
                 raise PlanValidationError(
                     f"Step {index} max_retries must be an integer between 0 and 3"
                 )
+        if "requires_approval" in step and not isinstance(step["requires_approval"], bool):
+            raise PlanValidationError(f"Step {index} requires_approval must be a boolean")
+        if "idempotency_key" in step:
+            key = step["idempotency_key"]
+            if not isinstance(key, str) or not key:
+                raise PlanValidationError(f"Step {index} idempotency_key must be a non-empty string")
         return step
 
     @staticmethod
@@ -135,12 +167,42 @@ class AgentRuntime:
         events: list[ExecutionEvent] = []
         results: dict[str, Any] = {}
         completed = True
+        awaiting_approval: str | None = None
 
         for step, step_id in zip(validated, step_ids):
             tool_name = step["tool"]
             tool = self.registry.get(tool_name)
             max_retries = step.get("max_retries", 0)
             args = self._resolve(step.get("args", {}), results)
+            idempotency_key = step.get("idempotency_key")
+
+            if step.get("requires_approval") and step_id not in self.approved_steps:
+                completed = False
+                awaiting_approval = step_id
+                events.append(
+                    ExecutionEvent(
+                        step_id=step_id,
+                        tool=tool_name,
+                        status="approval_required",
+                        attempt=0,
+                        duration_ms=0.0,
+                    )
+                )
+                break
+
+            if idempotency_key in self._idempotency_results:
+                results[step_id] = self._idempotency_results[idempotency_key]
+                events.append(
+                    ExecutionEvent(
+                        step_id=step_id,
+                        tool=tool_name,
+                        status="skipped",
+                        attempt=0,
+                        duration_ms=0.0,
+                        result_preview=str(results[step_id])[:160],
+                    )
+                )
+                continue
 
             success = False
             last_error: Exception | None = None
@@ -150,6 +212,8 @@ class AgentRuntime:
                     result = tool(**args)
                     duration_ms = (time.perf_counter() - start) * 1000
                     results[step_id] = result
+                    if idempotency_key is not None:
+                        self._idempotency_results[idempotency_key] = result
                     events.append(
                         ExecutionEvent(
                             step_id=step_id,
@@ -173,6 +237,7 @@ class AgentRuntime:
                             attempt=attempt,
                             duration_ms=round(duration_ms, 3),
                             error=f"{type(exc).__name__}: {exc}",
+                            failure_class=self._classify_failure(exc),
                         )
                     )
 
@@ -187,8 +252,18 @@ class AgentRuntime:
             "results": results,
             "events": [asdict(event) for event in events],
         }
+        if awaiting_approval is not None:
+            report["awaiting_approval"] = awaiting_approval
         if trace_path is not None:
             path = Path(trace_path)
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
         return report
+
+    @staticmethod
+    def _classify_failure(exc: Exception) -> str:
+        if isinstance(exc, (TimeoutError, OSError)):
+            return "transient"
+        if isinstance(exc, PermissionError):
+            return "permission"
+        return "permanent"

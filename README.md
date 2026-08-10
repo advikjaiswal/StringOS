@@ -10,6 +10,9 @@ This repository started as a broader autonomous-agent/"agent OS" experiment. The
 - Explicit tool registration and unknown-tool rejection before execution
 - Passing earlier tool results to later calls using `{"$ref": "step_id"}`
 - Bounded retries for transient tool failures
+- Approval checkpoints for sensitive plan steps
+- Idempotency keys with checkpoint export/import to prevent duplicate replay side effects
+- Failure classification in execution traces
 - JSON execution traces containing attempts, latency, status, errors, and result previews
 - A zero-dependency reliability demo with deterministic failure injection
 - A reproducible benchmark comparing retry policies under shared failure sequences
@@ -112,12 +115,15 @@ inspectable without requiring readers to run the code first.
     "id": "write",
     "tool": "write_text",
     "args": {"path": "summary.txt", "content": {"$ref": "summary"}},
-    "max_retries": 1
+    "max_retries": 1,
+    "idempotency_key": "write:summary"
   }
 ]
 ```
 
-`max_retries` is capped at three. The runtime rejects unknown tools and malformed plans before beginning execution.
+`max_retries` is capped at three. A step can set `requires_approval: true` to stop execution until its step id is included in the runtime's approved step set. A step can also provide an `idempotency_key`; successful results for that key are included in `export_checkpoint()` and reused by `from_checkpoint()` to avoid duplicate side effects during replay.
+
+The runtime rejects unknown tools and malformed plans before beginning execution.
 
 ## Current research questions
 
