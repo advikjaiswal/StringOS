@@ -12,6 +12,7 @@ This repository started as a broader autonomous-agent/"agent OS" experiment. The
 - Bounded retries for transient tool failures
 - JSON execution traces containing attempts, latency, status, errors, and result previews
 - A zero-dependency reliability demo with deterministic failure injection
+- A reproducible benchmark comparing retry policies under shared failure sequences
 - Unit tests for execution, references, validation, retries, failure exhaustion, and trace persistence
 
 ## What is experimental
@@ -68,6 +69,31 @@ Run the tests:
 python -m unittest discover -s tests -v
 ```
 
+## Reliability benchmark
+
+Run the deterministic benchmark:
+
+```bash
+python -m stringos.benchmark
+```
+
+The benchmark runs the same injected failure sequences against retry budgets from zero to
+three. It reports task success, recovery after a first-attempt failure, average attempts,
+and invalid-plan detection. Machine-readable JSON and a Markdown summary are written to
+`.stringos_benchmark/`.
+
+Change the experimental configuration explicitly when needed:
+
+```bash
+python -m stringos.benchmark --trials 1000 --failure-probability 0.25 --seed 42
+```
+
+The benchmark is deliberately synthetic and deterministic. It measures the runtime's
+recovery behaviour, not planner intelligence or production reliability.
+
+The committed [baseline results](benchmarks/latest_results.md) make the current claim
+inspectable without requiring readers to run the code first.
+
 ## Plan schema
 
 ```json
@@ -112,4 +138,5 @@ The default StringOS runtime does **not** depend on TinyGPT. Future work will ad
 
 ## Project status
 
-Research prototype. The goal is reproducible evidence about agent execution reliability—not a claim that StringOS is a complete autonomous operating system.
+Research prototype. The goal is reproducible evidence about agent execution reliability,
+not a claim that StringOS is a complete autonomous operating system.
