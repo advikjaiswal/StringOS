@@ -6,6 +6,7 @@ venv/
 venv311/
 .DS_Store
 .stringos_demo/
+.stringos_benchmark/
 *.pth
 agent_memory.json
 memory_store.json

@@ -1,0 +1,341 @@
+{
+  "benchmark": "stringos_real_runtime_scenarios",
+  "configuration": {
+    "runtime_module": "stringos.runtime",
+    "real_stringos_runtime_exercised": true,
+    "external_tools_mocked": true,
+    "deterministic_failure_injection": true,
+    "comparison_mode": "absolute_scenario_results",
+    "baseline_toggle_available": false
+  },
+  "metrics": {
+    "scenario_count": 9,
+    "completed_tasks": 4,
+    "successful_tasks": 4,
+    "task_completion_rate": 0.4444,
+    "task_success_rate": 0.4444,
+    "correct_behaviour": 9,
+    "expected_behaviour_correctness_rate": 1.0,
+    "safe_rejections": 2,
+    "safe_rejection_rate": 0.2222,
+    "recoverable_failures": 3,
+    "recovered_tasks": 2,
+    "recovered_completion_rate": 0.6667,
+    "recovery_rate": 0.6667,
+    "uncontained_unknown_outcomes": 1,
+    "uncontained_unknown_outcome_rate": 0.1111,
+    "postcondition_failures": 3,
+    "side_effect_failures": 1
+  },
+  "scenarios": [
+    {
+      "name": "normal_completion",
+      "completed": true,
+      "task_completed": true,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": true,
+      "terminal_state": "completed",
+      "recoverable_failure_injected": false,
+      "recovered": false,
+      "postcondition_satisfied": true,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "echo",
+          "status": "success",
+          "attempt": 1,
+          "duration_ms": 0.002,
+          "error": null,
+          "result_preview": "ok",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "tool_timeout_recovery",
+      "completed": true,
+      "task_completed": true,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": true,
+      "terminal_state": "completed",
+      "recoverable_failure_injected": true,
+      "recovered": true,
+      "postcondition_satisfied": true,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "timeout_once",
+          "status": "retry",
+          "attempt": 1,
+          "duration_ms": 0.008,
+          "error": "TimeoutError: injected timeout",
+          "result_preview": null,
+          "failure_class": "transient",
+          "outcome": null,
+          "idempotency_key": null,
+          "effect_receipt": null
+        },
+        {
+          "step_id": "task",
+          "tool": "timeout_once",
+          "status": "success",
+          "attempt": 2,
+          "duration_ms": 0.001,
+          "error": null,
+          "result_preview": "timeout recovered",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "retryable_tool_failure",
+      "completed": true,
+      "task_completed": true,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": true,
+      "terminal_state": "completed",
+      "recoverable_failure_injected": true,
+      "recovered": true,
+      "postcondition_satisfied": true,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "retryable_once",
+          "status": "retry",
+          "attempt": 1,
+          "duration_ms": 0.007,
+          "error": "OSError: injected retryable failure",
+          "result_preview": null,
+          "failure_class": "transient",
+          "outcome": null,
+          "idempotency_key": null,
+          "effect_receipt": null
+        },
+        {
+          "step_id": "task",
+          "tool": "retryable_once",
+          "status": "success",
+          "attempt": 2,
+          "duration_ms": 0.003,
+          "error": null,
+          "result_preview": "retryable recovered",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "malformed_tool_response",
+      "completed": false,
+      "task_completed": false,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": true,
+      "terminal_state": "postcondition_failed",
+      "recoverable_failure_injected": false,
+      "recovered": false,
+      "postcondition_satisfied": false,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "malformed_response",
+          "status": "success",
+          "attempt": 1,
+          "duration_ms": 0.001,
+          "error": null,
+          "result_preview": "{'unexpected': 'shape'}",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "permission_denial",
+      "completed": false,
+      "task_completed": false,
+      "expected_behaviour_correct": true,
+      "safe_rejection": true,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": false,
+      "terminal_state": "approval_required",
+      "recoverable_failure_injected": false,
+      "recovered": false,
+      "postcondition_satisfied": true,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "sensitive_write",
+          "status": "approval_required",
+          "attempt": 0,
+          "duration_ms": 0.0,
+          "error": null,
+          "result_preview": null,
+          "failure_class": null,
+          "outcome": "confirmed_failure",
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "partial_side_effect",
+      "completed": false,
+      "task_completed": false,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": true,
+      "manual_review_required": true,
+      "runtime_completed": false,
+      "terminal_state": "outcome_unknown",
+      "recoverable_failure_injected": true,
+      "recovered": false,
+      "postcondition_satisfied": false,
+      "side_effect_count": 1,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "partial_write",
+          "status": "unknown",
+          "attempt": 1,
+          "duration_ms": 0.004,
+          "error": "OSError: injected partial side effect",
+          "result_preview": null,
+          "failure_class": "transient",
+          "outcome": "outcome_unknown",
+          "idempotency_key": "partial_write:task:{\"record_id\": \"PARTIAL\"}",
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "false_success_trap",
+      "completed": false,
+      "task_completed": false,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": true,
+      "terminal_state": "postcondition_failed",
+      "recoverable_failure_injected": false,
+      "recovered": false,
+      "postcondition_satisfied": false,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "echo",
+          "status": "success",
+          "attempt": 1,
+          "duration_ms": 0.002,
+          "error": null,
+          "result_preview": "claimed complete",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "non_retryable_failure",
+      "completed": false,
+      "task_completed": false,
+      "expected_behaviour_correct": true,
+      "safe_rejection": true,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": false,
+      "terminal_state": "permanent_failure",
+      "recoverable_failure_injected": false,
+      "recovered": false,
+      "postcondition_satisfied": true,
+      "side_effect_count": 0,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "non_retryable",
+          "status": "failed",
+          "attempt": 1,
+          "duration_ms": 0.003,
+          "error": "ValueError: injected permanent failure",
+          "result_preview": null,
+          "failure_class": "permanent",
+          "outcome": null,
+          "idempotency_key": null,
+          "effect_receipt": null
+        }
+      ]
+    },
+    {
+      "name": "duplicate_idempotency",
+      "completed": true,
+      "task_completed": true,
+      "expected_behaviour_correct": true,
+      "safe_rejection": false,
+      "outcome_unknown": false,
+      "manual_review_required": false,
+      "runtime_completed": true,
+      "terminal_state": "completed",
+      "recoverable_failure_injected": false,
+      "recovered": false,
+      "postcondition_satisfied": true,
+      "side_effect_count": 1,
+      "events": [
+        {
+          "step_id": "task",
+          "tool": "sensitive_write",
+          "status": "success",
+          "attempt": 1,
+          "duration_ms": 0.002,
+          "error": null,
+          "result_preview": "{'record_id': 'ONCE', 'status': 'written', 'effect_receipt': 'receipt:ONCE'}",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": "write:ONCE",
+          "effect_receipt": "receipt:ONCE"
+        },
+        {
+          "step_id": "task",
+          "tool": "sensitive_write",
+          "status": "skipped",
+          "attempt": 0,
+          "duration_ms": 0.0,
+          "error": null,
+          "result_preview": "{'record_id': 'ONCE', 'status': 'written', 'effect_receipt': 'receipt:ONCE'}",
+          "failure_class": null,
+          "outcome": "confirmed_success",
+          "idempotency_key": "write:ONCE",
+          "effect_receipt": "receipt:ONCE"
+        }
+      ]
+    }
+  ]
+}

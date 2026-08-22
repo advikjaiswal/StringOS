@@ -1,0 +1,10 @@
+name,completed,runtime_completed,terminal_state,task_completed,expected_behaviour_correct,safe_rejection,outcome_unknown,manual_review_required,recoverable_failure_injected,recovered,postcondition_satisfied,side_effect_count
+normal_completion,True,True,completed,True,True,False,False,False,False,False,True,0
+tool_timeout_recovery,True,True,completed,True,True,False,False,False,True,True,True,0
+retryable_tool_failure,True,True,completed,True,True,False,False,False,True,True,True,0
+malformed_tool_response,False,True,postcondition_failed,False,True,False,False,False,False,False,False,0
+permission_denial,False,False,approval_required,False,True,True,False,False,False,False,True,0
+partial_side_effect,False,False,outcome_unknown,False,True,False,True,True,True,False,False,1
+false_success_trap,False,True,postcondition_failed,False,True,False,False,False,False,False,False,0
+non_retryable_failure,False,False,permanent_failure,False,True,True,False,False,False,False,True,0
+duplicate_idempotency,True,True,completed,True,True,False,False,False,False,False,True,1

@@ -1,23 +1,4 @@
-# StringOS Benchmark Results
-
-Generated with:
-
-```bash
-python -m stringos.benchmark --trials 500 --failure-probability 0.35 --seeds 11 17 23 29 31 --output-dir benchmarks
-```
-
-## Retry-Policy Benchmark
-
-Deterministic evaluation over 2500 total trials per policy (500 trials for each of 5 seeds) with a 35% transient failure probability per attempt and seeds 11, 17, 23, 29, 31.
-
-| Policy | Task success | Recovery after first failure | Average attempts |
-| --- | ---: | ---: | ---: |
-| retry_budget_0 | 64.7% | 0.0% | 1.00 |
-| retry_budget_1 | 88.4% | 67.0% | 1.35 |
-| retry_budget_2 | 95.6% | 87.5% | 1.47 |
-| retry_budget_3 | 98.4% | 95.6% | 1.51 |
-
-## StringOS Real-Runtime Scenario Benchmark
+# StringOS Real-Runtime Scenario Benchmark
 
 This benchmark imports and executes `stringos.runtime.AgentRuntime`. External tools are deterministic local test doubles; the core runtime, validation, approval, retry, idempotency and trace paths are real StringOS code.
 
@@ -44,6 +25,4 @@ This benchmark imports and executes `stringos.runtime.AgentRuntime`. External to
 | `non_retryable_failure` | `permanent_failure` | no | yes | no | 0 |
 | `duplicate_idempotency` | `completed` | yes | yes | no | 1 |
 
-## Limitations
-
-These are deterministic synthetic failures with mocked external tools. They measure StringOS runtime execution behavior, not planner intelligence, production reliability, statistical significance or real-world impact. No fair baseline toggle is reported for the scenario suite because the current runtime does not expose a single switch that disables only reliability behavior while preserving the production execution path.
+No retry-policy baseline is reported for these scenarios because the current runtime does not expose a fair single toggle that disables only the reliability layer without changing the production execution path.

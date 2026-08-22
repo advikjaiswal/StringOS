@@ -80,10 +80,14 @@ Run the deterministic benchmark:
 python -m stringos.benchmark
 ```
 
-The benchmark runs the same injected failure sequences against retry budgets from zero to
-three. It reports task success, recovery after a first-attempt failure, average attempts,
-and invalid-plan detection. Machine-readable JSON and a Markdown summary are written to
-`.stringos_benchmark/`.
+The benchmark now writes two complementary result sets:
+
+- retry-policy results over shared deterministic transient-failure sequences;
+- real-runtime scenario results that import and execute `stringos.runtime.AgentRuntime`.
+
+The scenario benchmark uses deterministic local tool doubles at the external boundary, but
+the core validation, approval checkpoint, retry, idempotency, execution trace and result
+reporting paths are real StringOS runtime code.
 
 Change the experimental configuration explicitly when needed:
 
@@ -91,8 +95,33 @@ Change the experimental configuration explicitly when needed:
 python -m stringos.benchmark --trials 1000 --failure-probability 0.25 --seed 42
 ```
 
+Regenerate the committed benchmark artifacts used for review:
+
+```bash
+python -m stringos.benchmark --trials 500 --failure-probability 0.35 --seeds 11 17 23 29 31 --output-dir benchmarks
+```
+
+Generated files include:
+
+- `benchmarks/results.json` and `benchmarks/results.md` for retry-policy results;
+- `benchmarks/scenario_results.json`, `benchmarks/scenario_results.csv` and
+  `benchmarks/scenario_results.md` for real-runtime scenarios.
+
+The current real-runtime scenario run covers normal completion, timeout recovery,
+retryable failure, malformed response, approval denial, partial side effect,
+false-success trap, permanent failure and idempotent replay. It reports 9 scenarios,
+44.4% task completion, 100.0% expected-behaviour correctness, 22.2% safe
+rejection, 66.7% recovered completion among recoverable injected failures,
+11.1% uncontained/unknown outcomes, 3 postcondition failures and 1
+side-effect failure.
+
+No fair baseline toggle is reported for these scenarios because the current runtime does
+not expose a single switch that disables only the reliability layer without changing the
+production execution path.
+
 The benchmark is deliberately synthetic and deterministic. It measures the runtime's
-recovery behaviour, not planner intelligence or production reliability.
+execution behaviour, not planner intelligence, production reliability, statistical
+significance or real-world impact.
 
 The committed [baseline results](benchmarks/latest_results.md) make the current claim
 inspectable without requiring readers to run the code first.

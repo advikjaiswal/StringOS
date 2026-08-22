@@ -1,0 +1,95 @@
+{
+  "benchmark": "transient_tool_failure_recovery",
+  "configuration": {
+    "trials_per_seed": 500,
+    "total_trials_per_policy": 2500,
+    "failure_probability_per_attempt": 0.35,
+    "seeds": [
+      11,
+      17,
+      23,
+      29,
+      31
+    ],
+    "shared_failure_sequences": true
+  },
+  "policies": [
+    {
+      "policy": "retry_budget_0",
+      "max_retries": 0,
+      "trials": 2500,
+      "successful_tasks": 1618,
+      "first_attempt_failures": 882,
+      "recovered_tasks": 0,
+      "task_success_rate": 0.6472,
+      "recovery_rate": 0.0,
+      "average_attempts": 1,
+      "per_seed_successful_tasks": {
+        "11": 324,
+        "17": 317,
+        "23": 323,
+        "29": 321,
+        "31": 333
+      }
+    },
+    {
+      "policy": "retry_budget_1",
+      "max_retries": 1,
+      "trials": 2500,
+      "successful_tasks": 2209,
+      "first_attempt_failures": 882,
+      "recovered_tasks": 591,
+      "task_success_rate": 0.8836,
+      "recovery_rate": 0.6701,
+      "average_attempts": 1.3528,
+      "per_seed_successful_tasks": {
+        "11": 440,
+        "17": 435,
+        "23": 444,
+        "29": 448,
+        "31": 442
+      }
+    },
+    {
+      "policy": "retry_budget_2",
+      "max_retries": 2,
+      "trials": 2500,
+      "successful_tasks": 2390,
+      "first_attempt_failures": 882,
+      "recovered_tasks": 772,
+      "task_success_rate": 0.956,
+      "recovery_rate": 0.8753,
+      "average_attempts": 1.4692,
+      "per_seed_successful_tasks": {
+        "11": 475,
+        "17": 477,
+        "23": 475,
+        "29": 487,
+        "31": 476
+      }
+    },
+    {
+      "policy": "retry_budget_3",
+      "max_retries": 3,
+      "trials": 2500,
+      "successful_tasks": 2461,
+      "first_attempt_failures": 882,
+      "recovered_tasks": 843,
+      "task_success_rate": 0.9844,
+      "recovery_rate": 0.9558,
+      "average_attempts": 1.5132,
+      "per_seed_successful_tasks": {
+        "11": 489,
+        "17": 493,
+        "23": 490,
+        "29": 496,
+        "31": 493
+      }
+    }
+  ],
+  "validation": {
+    "invalid_plans": 4,
+    "detected_before_execution": 4,
+    "detection_rate": 1.0
+  }
+}

@@ -222,6 +222,180 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(transient_report["events"][0]["failure_class"], "transient")
         self.assertEqual(report["events"][0]["failure_class"], "permanent")
 
+    def test_side_effect_failure_before_effect_is_confirmed_failure(self):
+        calls = []
+
+        def fail_before_effect(record_id):
+            calls.append(record_id)
+            raise ValueError("rejected before effect")
+
+        self.registry.register_side_effect_tool("fail_before_effect", fail_before_effect)
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "fail_before_effect",
+                    "args": {"record_id": "R-1"},
+                    "idempotency_key": "write:R-1",
+                }
+            ]
+        )
+
+        self.assertFalse(report["completed"])
+        self.assertEqual(report["events"][0]["outcome"], "confirmed_failure")
+        self.assertEqual(report["events"][0]["idempotency_key"], "write:R-1")
+        self.assertEqual(calls, ["R-1"])
+
+    def test_successful_side_effect_records_receipt(self):
+        def write_with_receipt(record_id):
+            return {"effect_receipt": f"receipt:{record_id}", "status": "created"}
+
+        self.registry.register_side_effect_tool("write_with_receipt", write_with_receipt)
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "write_with_receipt",
+                    "args": {"record_id": "R-2"},
+                    "idempotency_key": "write:R-2",
+                }
+            ]
+        )
+
+        self.assertTrue(report["completed"])
+        self.assertEqual(report["events"][0]["outcome"], "confirmed_success")
+        self.assertEqual(report["events"][0]["effect_receipt"], "receipt:R-2")
+
+    def test_timeout_after_side_effect_is_outcome_unknown_and_not_retried(self):
+        calls = []
+
+        def timeout_after_effect(record_id):
+            calls.append(record_id)
+            raise TimeoutError("timed out after creating record")
+
+        self.registry.register_side_effect_tool("timeout_after_effect", timeout_after_effect)
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "timeout_after_effect",
+                    "args": {"record_id": "R-3"},
+                    "idempotency_key": "write:R-3",
+                    "max_retries": 3,
+                }
+            ]
+        )
+
+        self.assertFalse(report["completed"])
+        self.assertEqual(len(calls), 1)
+        self.assertEqual([event["outcome"] for event in report["events"]], ["outcome_unknown"])
+        self.assertTrue(report["manual_review_required"])
+
+    def test_reconciliation_can_confirm_unknown_side_effect_success(self):
+        calls = []
+
+        def timeout_after_effect(record_id):
+            calls.append(record_id)
+            raise TimeoutError("timed out after creating record")
+
+        def reconcile(idempotency_key=None, effect_receipt=None):
+            return {"outcome": "confirmed_success", "effect_receipt": "external:R-4"}
+
+        self.registry.register_side_effect_tool(
+            "timeout_after_effect",
+            timeout_after_effect,
+            reconcile=reconcile,
+        )
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "timeout_after_effect",
+                    "args": {"record_id": "R-4"},
+                    "idempotency_key": "write:R-4",
+                    "max_retries": 3,
+                }
+            ]
+        )
+
+        self.assertTrue(report["completed"])
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(report["events"][-1]["status"], "reconciled")
+        self.assertEqual(report["events"][-1]["outcome"], "confirmed_success")
+
+    def test_reconciliation_can_confirm_unknown_side_effect_failure(self):
+        def timeout_after_effect(record_id):
+            raise TimeoutError("timed out before durable effect")
+
+        def reconcile(idempotency_key=None, effect_receipt=None):
+            return {"outcome": "confirmed_failure"}
+
+        self.registry.register_side_effect_tool(
+            "timeout_after_effect",
+            timeout_after_effect,
+            reconcile=reconcile,
+        )
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "timeout_after_effect",
+                    "args": {"record_id": "R-5"},
+                    "idempotency_key": "write:R-5",
+                    "max_retries": 3,
+                }
+            ]
+        )
+
+        self.assertFalse(report["completed"])
+        self.assertEqual(report["events"][-1]["status"], "reconciled")
+        self.assertEqual(report["events"][-1]["outcome"], "confirmed_failure")
+
+    def test_reconciliation_unavailable_requires_manual_review(self):
+        def timeout_after_effect(record_id):
+            raise TimeoutError("unknown remote outcome")
+
+        self.registry.register_side_effect_tool("timeout_after_effect", timeout_after_effect)
+        report = self.runtime.execute_plan(
+            [
+                {
+                    "id": "write",
+                    "tool": "timeout_after_effect",
+                    "args": {"record_id": "R-6"},
+                    "idempotency_key": "write:R-6",
+                    "max_retries": 3,
+                }
+            ]
+        )
+
+        self.assertFalse(report["completed"])
+        self.assertTrue(report["manual_review_required"])
+        self.assertEqual(report["events"][0]["outcome"], "outcome_unknown")
+
+    def test_duplicate_retry_with_same_idempotency_key_uses_checkpoint(self):
+        calls = []
+
+        def write_with_receipt(record_id):
+            calls.append(record_id)
+            return {"effect_receipt": f"receipt:{record_id}", "status": "created"}
+
+        self.registry.register_side_effect_tool("write_with_receipt", write_with_receipt)
+        plan = [
+            {
+                "id": "write",
+                "tool": "write_with_receipt",
+                "args": {"record_id": "R-7"},
+                "idempotency_key": "write:R-7",
+            }
+        ]
+        self.runtime.execute_plan(plan)
+        replay = AgentRuntime.from_checkpoint(self.registry, self.runtime.export_checkpoint()).execute_plan(plan)
+
+        self.assertTrue(replay["completed"])
+        self.assertEqual(calls, ["R-7"])
+        self.assertEqual(replay["events"][0]["status"], "skipped")
+        self.assertEqual(replay["events"][0]["outcome"], "confirmed_success")
+
 
 if __name__ == "__main__":
     unittest.main()
